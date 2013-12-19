@@ -360,6 +360,26 @@
 <wire x1="-1" y1="-0.5" x2="-1.5" y2="-0.5" width="0.127" layer="21"/>
 <text x="-1.5" y="2.5" size="0.8128" layer="21" font="vector">&gt;NAME</text>
 </package>
+<package name="SOT-23-8">
+<smd name="1" x="-1.3" y="-1.4" dx="0.38" dy="1.2" layer="1"/>
+<smd name="2" x="-0.65" y="-1.4" dx="0.38" dy="1.2" layer="1"/>
+<smd name="3" x="0" y="-1.4" dx="0.38" dy="1.2" layer="1"/>
+<smd name="4" x="0.65" y="-1.4" dx="0.38" dy="1.2" layer="1"/>
+<smd name="5" x="0.65" y="1.4" dx="0.38" dy="1.2" layer="1"/>
+<smd name="6" x="0" y="1.4" dx="0.38" dy="1.2" layer="1"/>
+<smd name="7" x="-0.65" y="1.4" dx="0.38" dy="1.2" layer="1"/>
+<smd name="8" x="-1.3" y="1.4" dx="0.38" dy="1.2" layer="1"/>
+<wire x1="-1.75" y1="2.25" x2="1.25" y2="2.25" width="0.127" layer="21"/>
+<wire x1="1.25" y1="2.25" x2="1.25" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-2.25" x2="-1.75" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-2.25" x2="-1.75" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-0.5" x2="-1.75" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="0.5" x2="-1.75" y2="2.25" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="0.5" x2="-1" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-1" y1="0.5" x2="-1" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.5" x2="-1.75" y2="-0.5" width="0.127" layer="21"/>
+<text x="-1.75" y="2.5" size="0.8128" layer="21" font="vector">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="PARALLAX_PROPELLER">
@@ -459,6 +479,22 @@
 <wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 <text x="-7.62" y="10.16" size="0.8128" layer="95" font="vector">&gt;NAME</text>
 <text x="-2.54" y="10.16" size="0.8128" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="AD799X">
+<pin name="SCL" x="-10.16" y="5.08" visible="pin" length="short"/>
+<pin name="SDA" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="A_0" x="-10.16" y="-5.08" visible="pin" length="short"/>
+<pin name="A_1" x="-10.16" y="-10.16" visible="pin" length="short"/>
+<pin name="A_2" x="10.16" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="A_3" x="10.16" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="VCC" x="10.16" y="5.08" visible="pin" length="short" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="10.16" size="0.8128" layer="95" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="0.8128" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -675,6 +711,28 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <connect gate="G$1" pin="2Y" pad="4"/>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="VCC" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AD799X" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="AD799X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT-23-8" package="SOT-23-8">
+<connects>
+<connect gate="G$1" pin="A_0" pad="3"/>
+<connect gate="G$1" pin="A_1" pad="4"/>
+<connect gate="G$1" pin="A_2" pad="5"/>
+<connect gate="G$1" pin="A_3" pad="6"/>
+<connect gate="G$1" pin="GND" pad="7"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3240,6 +3298,7 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <part name="C36" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="1206" value="10uF"/>
 <part name="R26" library="PP_Passives" deviceset="RESISTOR" device="0402" value="100K"/>
 <part name="R27" library="PP_Passives" deviceset="RESISTOR" device="0402" value="300K"/>
+<part name="U18" library="PP_DigitalIC" deviceset="AD799X" device="SOT-23-8" value="AD7999YRJZ-1500RL7"/>
 </parts>
 <sheets>
 <sheet>
@@ -3345,6 +3404,7 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <instance part="C36" gate="G$1" x="124.46" y="-63.5"/>
 <instance part="R26" gate="G$1" x="139.7" y="-66.04" rot="R90"/>
 <instance part="R27" gate="G$1" x="132.08" y="-76.2" rot="R180"/>
+<instance part="U18" gate="G$1" x="-15.24" y="-101.6"/>
 </instances>
 <busses>
 </busses>
