@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -13749,7 +13749,7 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 </class>
 </classes>
 <parts>
-<part name="U1" library="PP_DigitalIC" deviceset="P8X32A_PROPELLER" device="LQFP/QFN-44" value="P8X32A-M44"/>
+<part name="U1" library="PP_DigitalIC" deviceset="P8X32A_PROPELLER" device="QFN-44" value="P8X32A-M44"/>
 <part name="X1" library="PP_FreqCtrl" deviceset="CRYSTAL" device="HC-49" value="ATS060CSM-1"/>
 <part name="R1" library="PP_Passives" deviceset="RESISTOR" device="0402" value="10K"/>
 <part name="SD1" library="PP_Connectors" deviceset="SD_CARD" device="502570-0893" value="502570-0893"/>
@@ -14038,13 +14038,6 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <pinref part="U1" gate="G$1" pin="P27"/>
 <wire x1="10.16" y1="12.7" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
 <label x="12.7" y="12.7" size="0.8128" layer="95" font="vector"/>
-</segment>
-</net>
-<net name="P26" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="P26"/>
-<wire x1="20.32" y1="10.16" x2="10.16" y2="10.16" width="0.1524" layer="91"/>
-<label x="12.7" y="10.16" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="SW_DWN" class="0">
@@ -14376,13 +14369,6 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <label x="-25.4" y="-53.34" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
-<net name="SD_CLK" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="P2"/>
-<wire x1="-22.86" y1="17.78" x2="-12.7" y2="17.78" width="0.1524" layer="91"/>
-<label x="-22.86" y="17.78" size="0.8128" layer="95" font="vector"/>
-</segment>
-</net>
 <net name="LCD_RS" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="P4"/>
@@ -14629,9 +14615,9 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <label x="-66.04" y="-10.16" size="0.8128" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="P0"/>
-<wire x1="-22.86" y1="22.86" x2="-12.7" y2="22.86" width="0.1524" layer="91"/>
-<label x="-22.86" y="22.86" size="0.8128" layer="95" font="vector"/>
+<pinref part="U1" gate="G$1" pin="P3"/>
+<wire x1="-12.7" y1="15.24" x2="-22.86" y2="15.24" width="0.1524" layer="91"/>
+<label x="-22.86" y="15.24" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="SD_DI" class="0">
@@ -14643,9 +14629,9 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <label x="-66.04" y="-7.62" size="0.8128" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="P1"/>
-<wire x1="-12.7" y1="20.32" x2="-22.86" y2="20.32" width="0.1524" layer="91"/>
-<label x="-22.86" y="20.32" size="0.8128" layer="95" font="vector"/>
+<pinref part="U1" gate="G$1" pin="P2"/>
+<wire x1="-22.86" y1="17.78" x2="-12.7" y2="17.78" width="0.1524" layer="91"/>
+<label x="-22.86" y="17.78" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="SD_SCLK" class="0">
@@ -14655,6 +14641,11 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <wire x1="-60.96" y1="-5.08" x2="-91.44" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="-91.44" y1="-5.08" x2="-91.44" y2="12.7" width="0.1524" layer="91"/>
 <label x="-66.04" y="-5.08" size="0.8128" layer="95" font="vector"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="P1"/>
+<wire x1="-12.7" y1="20.32" x2="-22.86" y2="20.32" width="0.1524" layer="91"/>
+<label x="-22.86" y="20.32" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="IRQ" class="0">
@@ -14675,9 +14666,9 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <label x="-66.04" y="-2.54" size="0.8128" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="P3"/>
-<wire x1="-12.7" y1="15.24" x2="-22.86" y2="15.24" width="0.1524" layer="91"/>
-<label x="-22.86" y="15.24" size="0.8128" layer="95" font="vector"/>
+<pinref part="U1" gate="G$1" pin="P0"/>
+<wire x1="-22.86" y1="22.86" x2="-12.7" y2="22.86" width="0.1524" layer="91"/>
+<label x="-22.86" y="22.86" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="USB_V0" class="0">
@@ -14827,6 +14818,11 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <wire x1="-139.7" y1="17.78" x2="-147.32" y2="17.78" width="0.1524" layer="91"/>
 <label x="-147.32" y="17.78" size="0.8128" layer="95" font="vector"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="P26"/>
+<wire x1="20.32" y1="10.16" x2="10.16" y2="10.16" width="0.1524" layer="91"/>
+<label x="12.7" y="10.16" size="0.8128" layer="95" font="vector"/>
+</segment>
 </net>
 <net name="LCD_D7" class="0">
 <segment>
@@ -14835,9 +14831,9 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <label x="-147.32" y="-2.54" size="0.8128" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="P8"/>
-<wire x1="-22.86" y1="2.54" x2="-12.7" y2="2.54" width="0.1524" layer="91"/>
-<label x="-22.86" y="2.54" size="0.8128" layer="95" font="vector"/>
+<pinref part="U1" gate="G$1" pin="P5"/>
+<wire x1="-12.7" y1="10.16" x2="-22.86" y2="10.16" width="0.1524" layer="91"/>
+<label x="-22.86" y="10.16" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="LCD_D6" class="0">
@@ -14847,9 +14843,9 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <label x="-147.32" y="0" size="0.8128" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="P7"/>
-<wire x1="-12.7" y1="5.08" x2="-22.86" y2="5.08" width="0.1524" layer="91"/>
-<label x="-22.86" y="5.08" size="0.8128" layer="95" font="vector"/>
+<pinref part="U1" gate="G$1" pin="P6"/>
+<wire x1="-22.86" y1="7.62" x2="-12.7" y2="7.62" width="0.1524" layer="91"/>
+<label x="-22.86" y="7.62" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="LCD_D5" class="0">
@@ -14859,9 +14855,9 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <label x="-147.32" y="2.54" size="0.8128" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="P6"/>
-<wire x1="-22.86" y1="7.62" x2="-12.7" y2="7.62" width="0.1524" layer="91"/>
-<label x="-22.86" y="7.62" size="0.8128" layer="95" font="vector"/>
+<pinref part="U1" gate="G$1" pin="P7"/>
+<wire x1="-12.7" y1="5.08" x2="-22.86" y2="5.08" width="0.1524" layer="91"/>
+<label x="-22.86" y="5.08" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="LCD_D4" class="0">
@@ -14871,9 +14867,9 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <label x="-147.32" y="5.08" size="0.8128" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="P5"/>
-<wire x1="-12.7" y1="10.16" x2="-22.86" y2="10.16" width="0.1524" layer="91"/>
-<label x="-22.86" y="10.16" size="0.8128" layer="95" font="vector"/>
+<pinref part="U1" gate="G$1" pin="P8"/>
+<wire x1="-22.86" y1="2.54" x2="-12.7" y2="2.54" width="0.1524" layer="91"/>
+<label x="-22.86" y="2.54" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="TP_T+_0" class="0">
@@ -14940,9 +14936,9 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <label x="-177.8" y="-63.5" size="0.8128" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="P9"/>
-<wire x1="-12.7" y1="0" x2="-22.86" y2="0" width="0.1524" layer="91"/>
-<label x="-22.86" y="0" size="0.8128" layer="95" font="vector"/>
+<pinref part="U1" gate="G$1" pin="P10"/>
+<wire x1="-22.86" y1="-2.54" x2="-12.7" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-22.86" y="-2.54" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="TP_SCK" class="0">
@@ -14987,9 +14983,9 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <label x="-177.8" y="-68.58" size="0.8128" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="P10"/>
-<wire x1="-22.86" y1="-2.54" x2="-12.7" y2="-2.54" width="0.1524" layer="91"/>
-<label x="-22.86" y="-2.54" size="0.8128" layer="95" font="vector"/>
+<pinref part="U1" gate="G$1" pin="P9"/>
+<wire x1="-12.7" y1="0" x2="-22.86" y2="0" width="0.1524" layer="91"/>
+<label x="-22.86" y="0" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="TP_CS0" class="0">
