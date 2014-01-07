@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,16 +39,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -598,6 +598,62 @@
 <text x="-7.62" y="10.16" size="0.8128" layer="95" font="vector">&gt;NAME</text>
 <text x="-7.62" y="-15.24" size="0.8128" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
+<symbol name="ACPL-227">
+<pin name="1" x="-7.62" y="7.62" visible="off" length="short"/>
+<pin name="2" x="-7.62" y="2.54" visible="off" length="short"/>
+<pin name="3" x="-7.62" y="-5.08" visible="off" length="short"/>
+<pin name="4" x="-7.62" y="-10.16" visible="off" length="short"/>
+<pin name="8" x="7.62" y="7.62" visible="off" length="short" rot="R180"/>
+<pin name="7" x="7.62" y="2.54" visible="off" length="short" rot="R180"/>
+<pin name="6" x="7.62" y="-5.08" visible="off" length="short" rot="R180"/>
+<pin name="5" x="7.62" y="-10.16" visible="off" length="short" rot="R180"/>
+<wire x1="-5.08" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="4.064" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="4.064" x2="-2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-8.89" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-8.89" x2="-2.54" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-8.89" x2="-1.27" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-8.89" x2="-3.81" y2="-6.985" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-6.985" x2="-1.27" y2="-6.985" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-6.985" x2="-2.54" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="3.81" x2="-2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="-1.27" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="-3.81" y2="5.715" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="5.715" x2="-1.27" y2="5.715" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="5.715" x2="-2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="6.985" width="0.254" layer="94"/>
+<wire x1="2.54" y1="6.985" x2="1.27" y2="5.715" width="0.254" layer="94"/>
+<wire x1="1.27" y1="5.715" x2="1.27" y2="4.445" width="0.254" layer="94"/>
+<wire x1="1.27" y1="4.445" x2="2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.175" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.175" x2="2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="1.905" y1="3.175" x2="2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-5.715" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.715" x2="1.27" y2="-6.985" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-6.985" x2="1.27" y2="-8.255" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-8.255" x2="2.54" y2="-9.525" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-9.525" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-9.525" x2="2.54" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-8.89" x2="1.905" y2="-9.525" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-9.525" x2="2.54" y2="-9.525" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-12.7" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<text x="-5.08" y="12.7" size="0.8128" layer="95" font="vector">&gt;NAME</text>
+<text x="-5.08" y="-15.24" size="0.8128" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="P8X32A_PROPELLER" prefix="U" uservalue="yes">
@@ -880,6 +936,28 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <connect gate="G$1" pin="SCL" pad="1"/>
 <connect gate="G$1" pin="SDA" pad="2"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ACPL-227" prefix="OP" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="ACPL-227" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOIC-8" package="SOIC-8">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1722,6 +1800,49 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <text x="23.46" y="11.43" size="0.8128" layer="21" font="vector">SINGLE 18650 Li-Ion ONLY</text>
 <text x="41.46" y="11.43" size="0.8128" layer="21" font="vector">3.7V</text>
 </package>
+<package name="HEADER_01X02_PTH">
+<description>2 Pin 100 mill header</description>
+<pad name="1" x="0" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="0.8" shape="long" rot="R90"/>
+<wire x1="-1.27" y1="1.905" x2="-1.27" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="3.81" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-1.905" x2="3.81" y2="1.905" width="0.127" layer="21"/>
+<wire x1="3.81" y1="1.905" x2="-1.27" y2="1.905" width="0.127" layer="21"/>
+<text x="-1.27" y="-2.94" size="0.8128" layer="21" font="vector">&gt;NAME</text>
+<rectangle x1="-1.27" y1="1.27" x2="-0.635" y2="1.905" layer="21"/>
+</package>
+<package name="MOLEX_39920-0502">
+<description>Mouser Part #: 	538-39920-0502
+Manufacturer Part #: 39920-0502
+Manufacturer: Molex
+Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</description>
+<pad name="2A" x="5.5" y="7.62" drill="1.6" shape="long" rot="R90"/>
+<pad name="2B" x="9.5" y="7.62" drill="1.6" shape="long" rot="R90"/>
+<pad name="2C" x="5.5" y="-4.06" drill="1.6" shape="long" rot="R90"/>
+<pad name="2D" x="9.5" y="-4.06" drill="1.6" shape="long" rot="R90"/>
+<pad name="1A" x="-9.5" y="7.62" drill="1.6" shape="long" rot="R90"/>
+<pad name="1C" x="-9.5" y="-4.06" drill="1.6" shape="long" rot="R90"/>
+<pad name="1D" x="-5.5" y="-4.06" drill="1.6" shape="long" rot="R90"/>
+<pad name="1B" x="-5.5" y="7.62" drill="1.6" shape="long" rot="R90"/>
+<wire x1="-15" y1="10.12" x2="15" y2="10.12" width="0.127" layer="21"/>
+<wire x1="-15" y1="10.12" x2="-15" y2="-9.88" width="0.127" layer="21"/>
+<wire x1="-15" y1="-9.88" x2="15" y2="-9.88" width="0.127" layer="21"/>
+<wire x1="15" y1="-9.88" x2="15" y2="10.12" width="0.127" layer="21"/>
+<text x="-15" y="10.37" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+</package>
+<package name="MOLEX_KK_2">
+<pad name="P$1" x="-1.8796" y="0" drill="2"/>
+<pad name="P$2" x="2.0828" y="0" drill="2"/>
+<text x="-5.08" y="5.7912" size="0.8128" layer="21" font="vector">&gt;NAME</text>
+<wire x1="-5.08" y1="5" x2="-5.08" y2="-3.73" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-3.73" x2="-5.08" y2="-5" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-5" x2="5.08" y2="-5" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-5" x2="5.08" y2="-3.73" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-3.73" x2="5.08" y2="5" width="0.127" layer="21"/>
+<wire x1="5.08" y1="5" x2="-5.08" y2="5" width="0.127" layer="21"/>
+<circle x="5.08" y="-5" radius="1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-3.73" x2="5.08" y2="-3.73" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SD_CARD">
@@ -1769,6 +1890,17 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <wire x1="2.54" y1="0" x2="1.778" y2="0" width="0.254" layer="94"/>
 <wire x1="3.556" y1="2.032" x2="3.556" y2="1.016" width="0.254" layer="94"/>
 <wire x1="4.064" y1="1.524" x2="3.048" y2="1.524" width="0.254" layer="94"/>
+</symbol>
+<symbol name="PH_1X02">
+<description>Symbol for 2 pin connectors</description>
+<wire x1="-3.81" y1="-5.08" x2="3.81" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="3.81" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="-3.81" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="2.54" x2="-3.81" y2="-5.08" width="0.4064" layer="94"/>
+<text x="-3.81" y="3.175" size="0.8128" layer="95" font="vector">&gt;NAME</text>
+<text x="-3.81" y="-7.62" size="0.8128" layer="96" font="vector">&gt;VALUE</text>
+<pin name="1" x="0" y="0" visible="off" length="short" direction="pas" function="dot"/>
+<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1876,6 +2008,41 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <connects>
 <connect gate="G$1" pin="+" pad="P"/>
 <connect gate="G$1" pin="-" pad="N"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PH_1X02" prefix="J" uservalue="yes">
+<description>2 pin connectors</description>
+<gates>
+<gate name="G$1" symbol="PH_1X02" x="0" y="0"/>
+</gates>
+<devices>
+<device name="HEADER_PTH" package="HEADER_01X02_PTH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MOLEX_39920-0502" package="MOLEX_39920-0502">
+<connects>
+<connect gate="G$1" pin="1" pad="1A 1B 1C 1D"/>
+<connect gate="G$1" pin="2" pad="2A 2B 2C 2D"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MOLEX_26-61-4020" package="MOLEX_KK_2">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13850,6 +14017,9 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <part name="R27" library="PP_Passives" deviceset="RESISTOR" device="0402" value="300K"/>
 <part name="U18" library="PP_DigitalIC" deviceset="AD799X" device="SOT-23-8" value="AD7999YRJZ-1500RL7"/>
 <part name="U$2" library="PP_Aesthetics" deviceset="OCTOPROBER_LOGO" device="NORMAL"/>
+<part name="J2" library="PP_Connectors" deviceset="PH_1X02" device="MOLEX_26-61-4020" value="26-60-4020"/>
+<part name="OP1" library="PP_DigitalIC" deviceset="ACPL-227" device="SOIC-8"/>
+<part name="R28" library="PP_Passives" deviceset="RESISTOR" device="0402" value="120"/>
 </parts>
 <sheets>
 <sheet>
@@ -13957,6 +14127,9 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <instance part="R27" gate="G$1" x="132.08" y="-76.2" rot="R180"/>
 <instance part="U18" gate="G$1" x="-15.24" y="-101.6"/>
 <instance part="U$2" gate="G$1" x="-284.48" y="-101.6"/>
+<instance part="J2" gate="G$1" x="63.5" y="-99.06" rot="MR180"/>
+<instance part="OP1" gate="G$1" x="33.02" y="-104.14"/>
+<instance part="R28" gate="G$1" x="17.78" y="-101.6"/>
 </instances>
 <busses>
 </busses>
@@ -14033,11 +14206,16 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <label x="55.88" y="12.7" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
-<net name="P27" class="0">
+<net name="EXT" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="P27"/>
 <wire x1="10.16" y1="12.7" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
 <label x="12.7" y="12.7" size="0.8128" layer="95" font="vector"/>
+</segment>
+<segment>
+<pinref part="OP1" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="-96.52" x2="7.62" y2="-96.52" width="0.1524" layer="91"/>
+<label x="7.62" y="-96.52" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="SW_DWN" class="0">
@@ -14350,6 +14528,11 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <wire x1="109.22" y1="-83.82" x2="109.22" y2="-88.9" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="-88.9" x2="60.96" y2="-88.9" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="-88.9" x2="60.96" y2="-66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R28" gate="G$1" pin="1"/>
+<wire x1="12.7" y1="-101.6" x2="7.62" y2="-101.6" width="0.1524" layer="91"/>
+<label x="7.62" y="-101.6" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="RES" class="0">
@@ -15499,6 +15682,31 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <pinref part="U1" gate="G$1" pin="P25"/>
 <wire x1="10.16" y1="7.62" x2="20.32" y2="7.62" width="0.1524" layer="91"/>
 <label x="12.7" y="7.62" size="0.8128" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="OP1" gate="G$1" pin="2"/>
+<pinref part="R28" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="-101.6" x2="22.86" y2="-101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="EXT_CON_1" class="0">
+<segment>
+<pinref part="OP1" gate="G$1" pin="7"/>
+<wire x1="40.64" y1="-101.6" x2="53.34" y2="-101.6" width="0.1524" layer="91"/>
+<label x="43.18" y="-101.6" size="0.8128" layer="95" font="vector"/>
+<wire x1="53.34" y1="-99.06" x2="53.34" y2="-101.6" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="-99.06" x2="53.34" y2="-99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="EXT_CON_0" class="0">
+<segment>
+<pinref part="OP1" gate="G$1" pin="8"/>
+<label x="43.18" y="-96.52" size="0.8128" layer="95" font="vector"/>
+<wire x1="40.64" y1="-96.52" x2="63.5" y2="-96.52" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
