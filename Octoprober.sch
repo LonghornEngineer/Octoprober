@@ -1082,23 +1082,6 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
 <text x="-1.489" y="0.6985" size="0.8128" layer="25" font="vector">&gt;NAME</text>
 </package>
-<package name="0603@1">
-<description>0603 Footprint</description>
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-1.389" y="1.832" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-</package>
-<package name="0805">
-<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
-<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
-<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<text x="-1.397" y="0.8255" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-</package>
 <package name="1206">
 <wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
@@ -1351,6 +1334,33 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
 <text x="2.286" y="0.127" size="0.8128" layer="25" font="vector">&gt;NAME</text>
 </package>
+<package name="0805">
+<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<text x="-1.524" y="0.8255" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<wire x1="-1.524" y1="0.762" x2="1.524" y2="0.762" width="0.0508" layer="21"/>
+<wire x1="1.524" y1="0.762" x2="1.524" y2="-0.762" width="0.0508" layer="21"/>
+<wire x1="1.524" y1="-0.762" x2="-1.524" y2="-0.762" width="0.0508" layer="21"/>
+<wire x1="-1.524" y1="-0.762" x2="-1.524" y2="0.762" width="0.0508" layer="21"/>
+</package>
+<package name="B130-13-F">
+<smd name="CATHODE" x="-2" y="0" dx="2.5" dy="1.7" layer="1"/>
+<smd name="ANODE" x="2" y="0" dx="2.5" dy="1.7" layer="1"/>
+<wire x1="-3.5" y1="1.5" x2="-3.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-1.5" x2="-0.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-1.5" x2="3.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-1.5" x2="3.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="1.5" x2="-0.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="1.5" x2="-3.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="1.5" x2="-0.5" y2="-1.5" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-3.5" y="1.5"/>
+<vertex x="-4" y="1.5"/>
+<vertex x="-4" y="-1.5"/>
+<vertex x="-3.5" y="-1.5"/>
+</polygon>
+<text x="-4" y="2" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -1495,7 +1505,7 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="0603" package="0603@1">
+<device name="0603" package="0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1557,7 +1567,7 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="0603" package="0603@1">
+<device name="0603" package="0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1676,6 +1686,15 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <connects>
 <connect gate="G$1" pin="ANODE" pad="A"/>
 <connect gate="G$1" pin="CATHODE" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="B130-13-F" package="B130-13-F">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="ANODE"/>
+<connect gate="G$1" pin="CATHODE" pad="CATHODE"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2053,22 +2072,6 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <wire x1="3.85" y1="-1.8" x2="-3.85" y2="-1.8" width="0.127" layer="21"/>
 <wire x1="-3.85" y1="-1.8" x2="-3.85" y2="8.7" width="0.127" layer="21"/>
 </package>
-<package name="KEYSTONE_1042">
-<smd name="N" x="-39.3319" y="0" dx="7.3406" dy="6.35" layer="1"/>
-<smd name="P" x="39.3319" y="0" dx="7.3406" dy="6.35" layer="1"/>
-<hole x="-27.6225" y="-8.001" drill="3.2"/>
-<hole x="27.6225" y="8.001" drill="3.2"/>
-<hole x="35.9537" y="-8.001" drill="2.8"/>
-<wire x1="-44.45" y1="10.3251" x2="44.45" y2="10.3251" width="0.127" layer="21"/>
-<wire x1="44.45" y1="10.3251" x2="44.45" y2="-10.3251" width="0.127" layer="21"/>
-<wire x1="44.45" y1="-10.3251" x2="-44.45" y2="-10.3251" width="0.127" layer="21"/>
-<wire x1="-44.45" y1="-10.3251" x2="-44.45" y2="10.3251" width="0.127" layer="21"/>
-<text x="-44.45" y="11.43" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-<text x="39.37" y="-8.89" size="5.08" layer="21" font="vector">+</text>
-<text x="-43.18" y="-8.89" size="5.08" layer="21" font="vector">-</text>
-<text x="23.46" y="11.43" size="0.8128" layer="21" font="vector">SINGLE 18650 Li-Ion ONLY</text>
-<text x="41.46" y="11.43" size="0.8128" layer="21" font="vector">3.7V</text>
-</package>
 <package name="HEADER_01X02_PTH">
 <description>2 Pin 100 mill header</description>
 <pad name="1" x="0" y="0" drill="0.8" shape="long" rot="R90"/>
@@ -2143,22 +2146,6 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <text x="-7.62" y="10.16" size="0.8128" layer="95" font="vector">&gt;NAME</text>
 <text x="-7.62" y="-10.16" size="0.8128" layer="96" font="vector">&gt;VALUE</text>
 <pin name="ID" x="5.08" y="-2.54" visible="pin" length="short" rot="R180"/>
-</symbol>
-<symbol name="LI-ION_18650_HOLDER">
-<pin name="-" x="-5.08" y="0" visible="off" length="short"/>
-<pin name="+" x="5.08" y="0" visible="off" length="short" rot="R180"/>
-<text x="-5.08" y="5.08" size="0.8128" layer="95" font="vector">&gt;NAME</text>
-<text x="-5.08" y="-5.08" size="0.8128" layer="96" font="vector">&gt;VALUE</text>
-<wire x1="-2.032" y1="1.27" x2="-2.032" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.032" y1="0" x2="-2.032" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="2.54" x2="-0.762" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0.508" y1="1.27" x2="0.508" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.778" y1="2.54" x2="1.778" y2="0" width="0.254" layer="94"/>
-<wire x1="1.778" y1="0" x2="1.778" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-2.032" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="1.778" y2="0" width="0.254" layer="94"/>
-<wire x1="3.556" y1="2.032" x2="3.556" y2="1.016" width="0.254" layer="94"/>
-<wire x1="4.064" y1="1.524" x2="3.048" y2="1.524" width="0.254" layer="94"/>
 </symbol>
 <symbol name="PH_1X02">
 <description>Symbol for 2 pin connectors</description>
@@ -2261,22 +2248,6 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND SH_0 SH_1 SH_2 SH_3"/>
 <connect gate="G$1" pin="ID" pad="N/C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LI-ION_18650_HOLDER" prefix="BATT" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="LI-ION_18650_HOLDER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="1042" package="KEYSTONE_1042">
-<connects>
-<connect gate="G$1" pin="+" pad="P"/>
-<connect gate="G$1" pin="-" pad="N"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2575,7 +2546,7 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <library name="PP_Aesthetics">
 <packages>
 <package name="LHE_FRAME">
-<text x="0" y="5.08" size="0.8128" layer="21" font="vector">(c) 2013 Longhorn Engineer</text>
+<text x="0" y="5.08" size="0.8128" layer="21" font="vector">(c) 2014 Longhorn Engineer</text>
 <text x="0" y="3.81" size="0.8128" layer="21" font="vector">longhornengineer.com</text>
 <text x="0" y="2.54" size="0.8128" layer="21" font="vector">&gt;DRAWING_NAME</text>
 <text x="0" y="1.27" size="0.8128" layer="21" font="vector">&gt;REVNUM</text>
@@ -14252,7 +14223,6 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <part name="U14" library="PP_Sensors" deviceset="MAX31855" device="SO-8" value="MAX31855KASA+"/>
 <part name="C29" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.1uF"/>
 <part name="C30" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.01uF"/>
-<part name="BATT1" library="PP_Connectors" deviceset="LI-ION_18650_HOLDER" device="1042" value="1042"/>
 <part name="U5" library="PP_PowerIC" deviceset="BQ2407X" device="QFN-16" value="BQ24075RGTT"/>
 <part name="R14" library="PP_Passives" deviceset="RESISTOR" device="0402" value="10K"/>
 <part name="C31" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="1206" value="10uF"/>
@@ -14323,6 +14293,7 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <part name="D9" library="PP_Passives" deviceset="TVS_DIODE_DUAL" device="SOT-23" value="NUP2105LT1G"/>
 <part name="D10" library="PP_Passives" deviceset="TVS_DIODE_DUAL" device="SOT-23" value="NUP2105LT1G"/>
 <part name="D11" library="PP_Passives" deviceset="TVS_DIODE_DUAL" device="SOT-23" value="NUP2105LT1G"/>
+<part name="BATT1" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -14396,7 +14367,6 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <instance part="U14" gate="G$1" x="-190.5" y="-68.58"/>
 <instance part="C29" gate="G$1" x="-223.52" y="-66.04"/>
 <instance part="C30" gate="G$1" x="-215.9" y="-66.04"/>
-<instance part="BATT1" gate="G$1" x="165.1" y="-12.7" rot="R90"/>
 <instance part="U5" gate="G$1" x="132.08" y="-2.54"/>
 <instance part="R14" gate="G$1" x="154.94" y="-17.78" rot="R270"/>
 <instance part="C31" gate="G$1" x="172.72" y="-10.16"/>
@@ -14467,6 +14437,7 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <instance part="D9" gate="G$1" x="-248.92" y="-25.4" rot="R270"/>
 <instance part="D10" gate="G$1" x="-248.92" y="-50.8" rot="R270"/>
 <instance part="D11" gate="G$1" x="-248.92" y="-76.2" rot="R270"/>
+<instance part="BATT1" gate="G$1" x="162.56" y="-15.24" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -14859,8 +14830,7 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <junction x="-223.52" y="-78.74"/>
 </segment>
 <segment>
-<pinref part="BATT1" gate="G$1" pin="-"/>
-<wire x1="165.1" y1="-17.78" x2="165.1" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="-15.24" x2="165.1" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="154.94" y1="-22.86" x2="154.94" y2="-27.94" width="0.1524" layer="91"/>
 <label x="157.48" y="-33.02" size="0.8128" layer="95" font="vector"/>
@@ -14880,6 +14850,8 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <wire x1="152.4" y1="-27.94" x2="154.94" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="154.94" y="-27.94"/>
 <junction x="154.94" y="-33.02"/>
+<pinref part="BATT1" gate="G$1" pin="1"/>
+<wire x1="165.1" y1="-15.24" x2="162.56" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="VSS"/>
@@ -15376,8 +15348,6 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 </net>
 <net name="VBATT" class="0">
 <segment>
-<pinref part="BATT1" gate="G$1" pin="+"/>
-<wire x1="165.1" y1="-7.62" x2="165.1" y2="-2.54" width="0.1524" layer="91"/>
 <label x="152.4" y="-2.54" size="0.8128" layer="95" font="vector"/>
 <pinref part="U5" gate="G$1" pin="BAT"/>
 <wire x1="165.1" y1="-2.54" x2="149.86" y2="-2.54" width="0.1524" layer="91"/>
@@ -15385,6 +15355,9 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <wire x1="172.72" y1="-7.62" x2="172.72" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="-2.54" x2="165.1" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="165.1" y="-2.54"/>
+<wire x1="165.1" y1="-2.54" x2="165.1" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="BATT1" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="-12.7" x2="162.56" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CONTRAST" class="0">
