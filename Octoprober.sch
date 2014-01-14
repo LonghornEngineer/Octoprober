@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -476,6 +476,23 @@
 <smd name="78" x="3.25" y="4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
 <smd name="PAD" x="0" y="0" dx="7.5" dy="7.5" layer="1" roundness="10"/>
 </package>
+<package name="SOT-23A">
+<smd name="2" x="-1.5" y="0" dx="0.5" dy="1.1" layer="1" rot="R270"/>
+<smd name="3" x="-1.5" y="-0.95" dx="0.5" dy="1.1" layer="1" rot="R270"/>
+<smd name="1" x="-1.5" y="0.95" dx="0.5" dy="1.1" layer="1" rot="R270"/>
+<smd name="5" x="1.5" y="0.95" dx="0.5" dy="1.1" layer="1" rot="R270"/>
+<smd name="4" x="1.5" y="-0.95" dx="0.5" dy="1.1" layer="1" rot="R270"/>
+<wire x1="2.5" y1="-1.5" x2="2.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="1.5" x2="0.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="0.5" y1="1.5" x2="-0.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="1.5" x2="-2.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="1.5" x2="-2.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-1.5" x2="2.5" y2="-1.5" width="0.127" layer="21"/>
+<text x="-2.5" y="2" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<wire x1="-0.5" y1="1.5" x2="-0.5" y2="1" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="1" x2="0.5" y2="1" width="0.127" layer="21"/>
+<wire x1="0.5" y1="1" x2="0.5" y2="1.5" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PARALLAX_PROPELLER">
@@ -647,6 +664,19 @@
 <wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
 <text x="-10.16" y="12.7" size="0.8128" layer="95" font="vector">&gt;NAME</text>
 <text x="-2.54" y="12.7" size="0.8128" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="MCP3021">
+<pin name="SCL" x="-10.16" y="7.62" visible="pin" length="short"/>
+<pin name="SDA" x="-10.16" y="2.54" visible="pin" length="short"/>
+<pin name="A_0" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="GND" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="VCC" x="10.16" y="7.62" visible="pin" length="short" rot="R180"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="-7.62" y="12.7" size="0.8128" layer="95" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="0.8128" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -959,6 +989,25 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="MCP3021" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="MCP3021" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="SOT-23A" package="SOT-23A">
+<connects>
+<connect gate="G$1" pin="A_0" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SCL" pad="5"/>
+<connect gate="G$1" pin="SDA" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="PP_FreqCtrl">
@@ -1000,8 +1049,9 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <wire x1="-4" y1="1.9" x2="-4" y2="-1.9" width="0.127" layer="21"/>
 <wire x1="4" y1="1.9" x2="4" y2="-1.9" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-1.9" x2="-1.5" y2="-1.9" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="1.9" x2="1.5" y2="1.9" width="0.127" layer="21"/>
 <text x="-4" y="3" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<wire x1="-1.5" y1="1.9" x2="1.5" y2="1.9" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="1.9" x2="-1.5" y2="-1.9" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -14294,6 +14344,11 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <part name="D10" library="PP_Passives" deviceset="TVS_DIODE_DUAL" device="SOT-23" value="NUP2105LT1G"/>
 <part name="D11" library="PP_Passives" deviceset="TVS_DIODE_DUAL" device="SOT-23" value="NUP2105LT1G"/>
 <part name="BATT1" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH"/>
+<part name="C38" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.1uF"/>
+<part name="R29" library="PP_Passives" deviceset="RESISTOR" device="0402" value="100K"/>
+<part name="R30" library="PP_Passives" deviceset="RESISTOR" device="0402" value="254K"/>
+<part name="C39" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.1uF"/>
+<part name="U19" library="PP_DigitalIC" deviceset="MCP3021" device="SOT-23A" value="MCP3021A5T-E/OT"/>
 </parts>
 <sheets>
 <sheet>
@@ -14438,6 +14493,11 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <instance part="D10" gate="G$1" x="-248.92" y="-50.8" rot="R270"/>
 <instance part="D11" gate="G$1" x="-248.92" y="-76.2" rot="R270"/>
 <instance part="BATT1" gate="G$1" x="162.56" y="-15.24" rot="R180"/>
+<instance part="C38" gate="G$1" x="144.78" y="-99.06"/>
+<instance part="R29" gate="G$1" x="93.98" y="-104.14" rot="R270"/>
+<instance part="R30" gate="G$1" x="93.98" y="-119.38" rot="R270"/>
+<instance part="C39" gate="G$1" x="86.36" y="-116.84"/>
+<instance part="U19" gate="G$1" x="119.38" y="-109.22"/>
 </instances>
 <busses>
 </busses>
@@ -14504,6 +14564,11 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <wire x1="-104.14" y1="-119.38" x2="-114.3" y2="-119.38" width="0.1524" layer="91"/>
 <label x="-111.76" y="-119.38" size="0.8128" layer="95" font="vector"/>
 </segment>
+<segment>
+<wire x1="101.6" y1="-106.68" x2="109.22" y2="-106.68" width="0.1524" layer="91"/>
+<label x="101.6" y="-106.68" size="0.8128" layer="95" font="vector"/>
+<pinref part="U19" gate="G$1" pin="SDA"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -14522,6 +14587,11 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <pinref part="U18" gate="G$1" pin="SCL"/>
 <wire x1="-104.14" y1="-114.3" x2="-114.3" y2="-114.3" width="0.1524" layer="91"/>
 <label x="-111.76" y="-114.3" size="0.8128" layer="95" font="vector"/>
+</segment>
+<segment>
+<wire x1="109.22" y1="-101.6" x2="101.6" y2="-101.6" width="0.1524" layer="91"/>
+<label x="101.6" y="-101.6" size="0.8128" layer="95" font="vector"/>
+<pinref part="U19" gate="G$1" pin="SCL"/>
 </segment>
 </net>
 <net name="EXT" class="0">
@@ -14908,6 +14978,22 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <pinref part="C37" gate="G$1" pin="2"/>
 <wire x1="-121.92" y1="-109.22" x2="-121.92" y2="-106.68" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="129.54" y1="-106.68" x2="137.16" y2="-106.68" width="0.1524" layer="91"/>
+<pinref part="C38" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="-106.68" x2="144.78" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="-106.68" x2="144.78" y2="-104.14" width="0.1524" layer="91"/>
+<label x="132.08" y="-106.68" size="0.8128" layer="95" font="vector"/>
+<pinref part="U19" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R30" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="-124.46" x2="93.98" y2="-127" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-127" x2="86.36" y2="-127" width="0.1524" layer="91"/>
+<label x="86.36" y="-127" size="0.8128" layer="95" font="vector"/>
+<pinref part="C39" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="-121.92" x2="86.36" y2="-127" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="RES" class="0">
 <segment>
@@ -15162,6 +15248,15 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <pinref part="C37" gate="G$1" pin="1"/>
 <wire x1="-121.92" y1="-96.52" x2="-121.92" y2="-99.06" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="137.16" y1="-101.6" x2="129.54" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="-101.6" x2="137.16" y2="-93.98" width="0.1524" layer="91"/>
+<pinref part="C38" gate="G$1" pin="1"/>
+<wire x1="137.16" y1="-93.98" x2="144.78" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="-93.98" x2="144.78" y2="-96.52" width="0.1524" layer="91"/>
+<label x="132.08" y="-101.6" size="0.8128" layer="95" font="vector"/>
+<pinref part="U19" gate="G$1" pin="VCC"/>
+</segment>
 </net>
 <net name="SD_RW" class="0">
 <segment>
@@ -15358,6 +15453,12 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <wire x1="165.1" y1="-2.54" x2="165.1" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="BATT1" gate="G$1" pin="2"/>
 <wire x1="165.1" y1="-12.7" x2="162.56" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R29" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="-99.06" x2="93.98" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-96.52" x2="86.36" y2="-96.52" width="0.1524" layer="91"/>
+<label x="86.36" y="-96.52" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="CONTRAST" class="0">
@@ -16372,6 +16473,21 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <wire x1="-254" y1="7.62" x2="-261.62" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-254" y1="5.08" x2="-254" y2="7.62" width="0.1524" layer="91"/>
 <junction x="-254" y="7.62"/>
+</segment>
+</net>
+<net name="A_0" class="0">
+<segment>
+<pinref part="R29" gate="G$1" pin="2"/>
+<wire x1="109.22" y1="-111.76" x2="93.98" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-111.76" x2="93.98" y2="-109.22" width="0.1524" layer="91"/>
+<pinref part="R30" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="-111.76" x2="93.98" y2="-114.3" width="0.1524" layer="91"/>
+<junction x="93.98" y="-111.76"/>
+<label x="101.6" y="-111.76" size="0.8128" layer="95" font="vector"/>
+<pinref part="C39" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="-111.76" x2="86.36" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-111.76" x2="86.36" y2="-114.3" width="0.1524" layer="91"/>
+<pinref part="U19" gate="G$1" pin="A_0"/>
 </segment>
 </net>
 </nets>
