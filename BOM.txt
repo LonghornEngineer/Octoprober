@@ -1,4 +1,4 @@
-Partlist exported from C:/Users/MacroFab_00/Documents/GitHub/Octoprober/Octoprober.sch at 1/28/2014 11:05:17 AM
+Partlist exported from C:/Users/MacroFab_00/Documents/GitHub/Octoprober/Octoprober.sch at 1/28/2014 12:03:59 PM
 
 Part  Value                 Device                        Package                       Description                    DNAME           REVNUM
 BATT1                       PH_1X02HEADER_PTH             HEADER_01X02_PTH              2 pin connectors                                     
@@ -73,7 +73,7 @@ L16   BK1005HM471-T         INDUCTOR0402                  0402                  
 L17   BK1005HM471-T         INDUCTOR0402                  0402                          Inductors                                            
 LCD1                        HD44780_LCD1602_COUNTERSINK   CHAR_DISPLAY_1602_COUNTERSINK                                                      
 OP1   ACPL-227              ACPL-227SOIC-8                SOIC-8                                                                             
-P1    TC33X-1               TC33X-1TC33X-1                TC33_TRIMMER                                                                       
+P1    TC33X-2-103E          TC33X-1TC33X-1                TC33_TRIMMER                                                                       
 R1    10K                   RESISTOR0402                  0402                          Resistors                                            
 R2    10K                   RESISTOR0402                  0402                          Resistors                                            
 R3    10K                   RESISTOR0402                  0402                          Resistors                                            

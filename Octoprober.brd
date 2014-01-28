@@ -5712,7 +5712,7 @@ design rules under a new name.</description>
 <element name="LCD1" library="PP_Displays" package="CHAR_DISPLAY_1602_COUNTERSINK" value="" x="8.382" y="63.754" smashed="yes">
 <attribute name="NAME" x="5.334" y="28.154" size="0.8128" layer="25" font="vector"/>
 </element>
-<element name="P1" library="PP_Passives" package="TC33_TRIMMER" value="TC33X-1" x="5.334" y="46.736" smashed="yes">
+<element name="P1" library="PP_Passives" package="TC33_TRIMMER" value="TC33X-2-103E" x="5.334" y="46.736" smashed="yes">
 <attribute name="NAME" x="2.794" y="49.784" size="0.8128" layer="25" font="vector"/>
 </element>
 <element name="U7" library="PP_Sensors" package="SO-8" value="MAX31855KASA+" x="83.058" y="76.708" smashed="yes" rot="R270">

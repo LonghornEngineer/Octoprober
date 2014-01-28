@@ -14248,7 +14248,7 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <attribute name="REVNUM" value="REV 0"/>
 </part>
 <part name="LCD1" library="PP_Displays" deviceset="HD44780_LCD" device="1602_COUNTERSINK"/>
-<part name="P1" library="PP_Passives" deviceset="TC33X-1" device="TC33X-1" value="TC33X-1"/>
+<part name="P1" library="PP_Passives" deviceset="TC33X-1" device="TC33X-1" value="TC33X-2-103E"/>
 <part name="U7" library="PP_Sensors" deviceset="MAX31855" device="SO-8" value="MAX31855KASA+"/>
 <part name="C15" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.1uF"/>
 <part name="C16" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.01uF"/>
