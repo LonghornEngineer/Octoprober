@@ -14308,14 +14308,14 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <part name="J2" library="PP_Connectors" deviceset="PH_1X02" device="MOLEX_26-61-4020" value="26-60-4020"/>
 <part name="OP1" library="PP_DigitalIC" deviceset="ACPL-227" device="SOIC-8" value="ACPL-227"/>
 <part name="R28" library="PP_Passives" deviceset="RESISTOR" device="0402" value="120"/>
-<part name="TC1" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH"/>
-<part name="TC2" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH"/>
-<part name="TC3" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH"/>
-<part name="TC4" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH"/>
-<part name="TC5" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH"/>
-<part name="TC6" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH"/>
-<part name="TC7" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH"/>
-<part name="TC8" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH"/>
+<part name="TC1" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH" value="282834-2"/>
+<part name="TC2" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH" value="282834-2"/>
+<part name="TC3" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH" value="282834-2"/>
+<part name="TC4" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH" value="282834-2"/>
+<part name="TC5" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH" value="282834-2"/>
+<part name="TC6" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH" value="282834-2"/>
+<part name="TC7" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH" value="282834-2"/>
+<part name="TC8" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH" value="282834-2"/>
 <part name="U18" library="PP_DigitalIC" deviceset="DS1340" device="SOIC-8" value="DS1340Z-33+"/>
 <part name="C37" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.1uF"/>
 <part name="X2" library="PP_FreqCtrl" deviceset="CRYSTAL" device="8MM_X_3.8MM" value="ABS25-32.768KHz-1-T"/>
@@ -14343,7 +14343,7 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <part name="D9" library="PP_Passives" deviceset="TVS_DIODE_DUAL" device="SOT-23" value="NUP2105LT1G"/>
 <part name="D10" library="PP_Passives" deviceset="TVS_DIODE_DUAL" device="SOT-23" value="NUP2105LT1G"/>
 <part name="D11" library="PP_Passives" deviceset="TVS_DIODE_DUAL" device="SOT-23" value="NUP2105LT1G"/>
-<part name="BATT1" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH"/>
+<part name="BATT1" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH" value="MIKROE-1120"/>
 <part name="C38" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.1uF"/>
 <part name="R29" library="PP_Passives" deviceset="RESISTOR" device="0402" value="100K"/>
 <part name="R30" library="PP_Passives" deviceset="RESISTOR" device="0402" value="254K"/>
