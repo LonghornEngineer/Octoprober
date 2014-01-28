@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14232,7 +14232,7 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <part name="C10" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.1uF"/>
 <part name="J1" library="PP_Connectors" deviceset="USB" device="10118193-0001LF" value="10118193-0001LF"/>
 <part name="L1" library="PP_Passives" deviceset="RESISTOR" device="0603" value="MI0603K300R-10"/>
-<part name="U4" library="PP_DigitalIC" deviceset="FT230X" device="QFN-16"/>
+<part name="U4" library="PP_DigitalIC" deviceset="FT230X" device="QFN-16" value="FT230XQ-R"/>
 <part name="C11" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.1uF"/>
 <part name="R10" library="PP_Passives" deviceset="RESISTOR" device="0402" value="22"/>
 <part name="R11" library="PP_Passives" deviceset="RESISTOR" device="0402" value="22"/>
@@ -14306,7 +14306,7 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <part name="R27" library="PP_Passives" deviceset="RESISTOR" device="0402" value="300K"/>
 <part name="U$2" library="PP_Aesthetics" deviceset="OCTOPROBER_LOGO" device="NORMAL"/>
 <part name="J2" library="PP_Connectors" deviceset="PH_1X02" device="MOLEX_26-61-4020" value="26-60-4020"/>
-<part name="OP1" library="PP_DigitalIC" deviceset="ACPL-227" device="SOIC-8"/>
+<part name="OP1" library="PP_DigitalIC" deviceset="ACPL-227" device="SOIC-8" value="ACPL-227"/>
 <part name="R28" library="PP_Passives" deviceset="RESISTOR" device="0402" value="120"/>
 <part name="TC1" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH"/>
 <part name="TC2" library="PP_Connectors" deviceset="PH_1X02" device="HEADER_PTH"/>

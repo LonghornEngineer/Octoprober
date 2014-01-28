@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5674,7 +5674,7 @@ design rules under a new name.</description>
 <element name="L1" library="PP_Passives" package="0603" value="MI0603K300R-10" x="121.793" y="83.566" smashed="yes" rot="R270">
 <attribute name="NAME" x="121.166" y="81.08" size="0.8128" layer="25" font="vector"/>
 </element>
-<element name="U4" library="PP_DigitalIC" package="QFN-16" value="" x="110.363" y="82.169" smashed="yes" rot="R90">
+<element name="U4" library="PP_DigitalIC" package="QFN-16" value="FT230XQ-R" x="110.363" y="82.169" smashed="yes" rot="R90">
 <attribute name="NAME" x="113.189" y="79.835" size="0.8128" layer="25" font="vector"/>
 </element>
 <element name="C11" library="PP_Passives" package="0402" value="0.1uF" x="112.268" y="87.884" smashed="yes" rot="R90">
@@ -5862,7 +5862,7 @@ design rules under a new name.</description>
 </element>
 <element name="U$2" library="PP_Aesthetics" package="OCTOPROBER_LOGO" value="OCTOPROBER_LOGONORMAL" x="0.508" y="7.112"/>
 <element name="J2" library="PP_Connectors" package="MOLEX_KK_2" value="26-60-4020" x="101.854" y="6.604"/>
-<element name="OP1" library="PP_DigitalIC" package="SOIC-8" value="" x="101.6" y="18.034" rot="R180"/>
+<element name="OP1" library="PP_DigitalIC" package="SOIC-8" value="ACPL-227" x="101.6" y="18.034" rot="R180"/>
 <element name="R28" library="PP_Passives" package="0402" value="120" x="102.108" y="23.876" smashed="yes" rot="R270">
 <attribute name="NAME" x="99.349" y="24.3205" size="0.8128" layer="25" font="vector"/>
 </element>

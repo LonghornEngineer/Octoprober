@@ -1,0 +1,143 @@
+Partlist exported from C:/Users/MacroFab_00/Documents/GitHub/Octoprober/Octoprober.sch at 1/28/2014 11:05:17 AM
+
+Part  Value                 Device                        Package                       Description                    DNAME           REVNUM
+BATT1                       PH_1X02HEADER_PTH             HEADER_01X02_PTH              2 pin connectors                                     
+C1    0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C2    0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C3    0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C4    0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C5    0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C6    0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C7    10uF                  CAPACITOR_NON_POLAR1206       1206                          Capacitor Non Polarized                              
+C8    10uF                  CAPACITOR_NON_POLAR1206       1206                          Capacitor Non Polarized                              
+C9    0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C10   0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C11   0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C12   0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C13   0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C14   0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C15   0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C16   0.01uF                CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C17   0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C18   0.01uF                CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C19   0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C20   0.01uF                CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C21   0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C22   0.01uF                CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C23   0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C24   0.01uF                CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C25   0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C26   0.01uF                CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C27   0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C28   0.01uF                CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C29   0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C30   0.01uF                CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C31   10uF                  CAPACITOR_NON_POLAR1206       1206                          Capacitor Non Polarized                              
+C32   10uF                  CAPACITOR_NON_POLAR1206       1206                          Capacitor Non Polarized                              
+C33   10uF                  CAPACITOR_NON_POLAR1206       1206                          Capacitor Non Polarized                              
+C34   0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C35   0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C36   10uF                  CAPACITOR_NON_POLAR1206       1206                          Capacitor Non Polarized                              
+C37   0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C38   0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+C39   0.1uF                 CAPACITOR_NON_POLAR0402       0402                          Capacitor Non Polarized                              
+D1    598-8070-107F         LED_SINGLE0402                LED_0402                                                                           
+D2    598-8070-107F         LED_SINGLE0402                LED_0402                                                                           
+D3    PMEG6030EP,115        DIODESOD-128                  SOD-128                       Diode - Single                                       
+D4    NUP2105LT1G           TVS_DIODE_DUALSOT-23          SOT-23                                                                             
+D5    NUP2105LT1G           TVS_DIODE_DUALSOT-23          SOT-23                                                                             
+D6    NUP2105LT1G           TVS_DIODE_DUALSOT-23          SOT-23                                                                             
+D7    NUP2105LT1G           TVS_DIODE_DUALSOT-23          SOT-23                                                                             
+D8    NUP2105LT1G           TVS_DIODE_DUALSOT-23          SOT-23                                                                             
+D9    NUP2105LT1G           TVS_DIODE_DUALSOT-23          SOT-23                                                                             
+D10   NUP2105LT1G           TVS_DIODE_DUALSOT-23          SOT-23                                                                             
+D11   NUP2105LT1G           TVS_DIODE_DUALSOT-23          SOT-23                                                                             
+J1    10118193-0001LF       USB10118193-0001LF            10118193-0001LF                                                                    
+J2    26-60-4020            PH_1X02MOLEX_26-61-4020       MOLEX_KK_2                    2 pin connectors                                     
+L1    MI0603K300R-10        RESISTOR0603                  0603                          Resistors                                            
+L2    BK1005HM471-T         INDUCTOR0402                  0402                          Inductors                                            
+L3    BK1005HM471-T         INDUCTOR0402                  0402                          Inductors                                            
+L4    BK1005HM471-T         INDUCTOR0402                  0402                          Inductors                                            
+L5    BK1005HM471-T         INDUCTOR0402                  0402                          Inductors                                            
+L6    BK1005HM471-T         INDUCTOR0402                  0402                          Inductors                                            
+L7    BK1005HM471-T         INDUCTOR0402                  0402                          Inductors                                            
+L8    BK1005HM471-T         INDUCTOR0402                  0402                          Inductors                                            
+L9    BK1005HM471-T         INDUCTOR0402                  0402                          Inductors                                            
+L10   BK1005HM471-T         INDUCTOR0402                  0402                          Inductors                                            
+L11   BK1005HM471-T         INDUCTOR0402                  0402                          Inductors                                            
+L12   BK1005HM471-T         INDUCTOR0402                  0402                          Inductors                                            
+L13   BK1005HM471-T         INDUCTOR0402                  0402                          Inductors                                            
+L14   BK1005HM471-T         INDUCTOR0402                  0402                          Inductors                                            
+L15   BK1005HM471-T         INDUCTOR0402                  0402                          Inductors                                            
+L16   BK1005HM471-T         INDUCTOR0402                  0402                          Inductors                                            
+L17   BK1005HM471-T         INDUCTOR0402                  0402                          Inductors                                            
+LCD1                        HD44780_LCD1602_COUNTERSINK   CHAR_DISPLAY_1602_COUNTERSINK                                                      
+OP1   ACPL-227              ACPL-227SOIC-8                SOIC-8                                                                             
+P1    TC33X-1               TC33X-1TC33X-1                TC33_TRIMMER                                                                       
+R1    10K                   RESISTOR0402                  0402                          Resistors                                            
+R2    10K                   RESISTOR0402                  0402                          Resistors                                            
+R3    10K                   RESISTOR0402                  0402                          Resistors                                            
+R4    10K                   RESISTOR0402                  0402                          Resistors                                            
+R5    10K                   RESISTOR0402                  0402                          Resistors                                            
+R6    10K                   RESISTOR0402                  0402                          Resistors                                            
+R7    10K                   RESISTOR0402                  0402                          Resistors                                            
+R8    10K                   RESISTOR0402                  0402                          Resistors                                            
+R9    10K                   RESISTOR0402                  0402                          Resistors                                            
+R10   22                    RESISTOR0402                  0402                          Resistors                                            
+R11   22                    RESISTOR0402                  0402                          Resistors                                            
+R12   330                   RESISTOR0402                  0402                          Resistors                                            
+R13   330                   RESISTOR0402                  0402                          Resistors                                            
+R14   10K                   RESISTOR0402                  0402                          Resistors                                            
+R15   10K                   RESISTOR0402                  0402                          Resistors                                            
+R16   10K                   RESISTOR0402                  0402                          Resistors                                            
+R17   1.18K                 RESISTOR0402                  0402                          Resistors                                            
+R18   1.13K                 RESISTOR0402                  0402                          Resistors                                            
+R19   10K                   RESISTOR0402                  0402                          Resistors                                            
+R20   10K                   RESISTOR0402                  0402                          Resistors                                            
+R21   10K                   RESISTOR0402                  0402                          Resistors                                            
+R22   10K                   RESISTOR0402                  0402                          Resistors                                            
+R23   10K                   RESISTOR0402                  0402                          Resistors                                            
+R24   100K                  RESISTOR0402                  0402                          Resistors                                            
+R25   10K                   RESISTOR0402                  0402                          Resistors                                            
+R26   100K                  RESISTOR0402                  0402                          Resistors                                            
+R27   300K                  RESISTOR0402                  0402                          Resistors                                            
+R28   120                   RESISTOR0402                  0402                          Resistors                                            
+R29   100K                  RESISTOR0402                  0402                          Resistors                                            
+R30   254K                  RESISTOR0402                  0402                          Resistors                                            
+SD1   502570-0893           SD_CARD502570-0893            502570-0893                                                                        
+SW1   101-0134-EV           SPST101-0134-EV               101-0134-EV                   SPST Switches                                        
+SW2   EVQ-Q2203W            SPSTEVQ-Q2203W                EVQ-Q2203W                    SPST Switches                                        
+SW3   EVQ-Q2203W            SPSTEVQ-Q2203W                EVQ-Q2203W                    SPST Switches                                        
+SW4   EVQ-Q2203W            SPSTEVQ-Q2203W                EVQ-Q2203W                    SPST Switches                                        
+SW5   EVQ-Q2203W            SPSTEVQ-Q2203W                EVQ-Q2203W                    SPST Switches                                        
+TC1                         PH_1X02HEADER_PTH             HEADER_01X02_PTH              2 pin connectors                                     
+TC2                         PH_1X02HEADER_PTH             HEADER_01X02_PTH              2 pin connectors                                     
+TC3                         PH_1X02HEADER_PTH             HEADER_01X02_PTH              2 pin connectors                                     
+TC4                         PH_1X02HEADER_PTH             HEADER_01X02_PTH              2 pin connectors                                     
+TC5                         PH_1X02HEADER_PTH             HEADER_01X02_PTH              2 pin connectors                                     
+TC6                         PH_1X02HEADER_PTH             HEADER_01X02_PTH              2 pin connectors                                     
+TC7                         PH_1X02HEADER_PTH             HEADER_01X02_PTH              2 pin connectors                                     
+TC8                         PH_1X02HEADER_PTH             HEADER_01X02_PTH              2 pin connectors                                     
+U$1   LHE_FRAME             LHE_FRAME                     LHE_FRAME                                                    Parker Dillmann REV 0 
+U$2   OCTOPROBER_LOGONORMAL OCTOPROBER_LOGONORMAL         OCTOPROBER_LOGO                                                                    
+U1    P8X32A-M44            P8X32A_PROPELLERQFN-44        QFN-44                                                                             
+U2    CAT24C512WI-GT3       CAT24M01XI-T2SOIC-8_W         SOIC-8_W                                                                           
+U3    ADP3338AKCZ-3.3-RL    FIXED_VOLTAGE_REGSOT-223_ALT  SOT-223                                                                            
+U4    FT230XQ-R             FT230XQFN-16                  QFN-16                        Manufacturer Part #: FT230XS-R                       
+U5    BQ24075RGTT           BQ2407XQFN-16                 QFN-16_BOT_PAD                                                                     
+U6    74HC2G04GV,125        74HCT2G04GV,125TTSOP-6        TTSOP-6                                                                            
+U7    MAX31855KASA+         MAX31855SO-8                  SO-8                                                                               
+U8    MAX31855KASA+         MAX31855SO-8                  SO-8                                                                               
+U9    MAX31855KASA+         MAX31855SO-8                  SO-8                                                                               
+U10   MAX31855KASA+         MAX31855SO-8                  SO-8                                                                               
+U11   MAX31855KASA+         MAX31855SO-8                  SO-8                                                                               
+U12   MAX31855KASA+         MAX31855SO-8                  SO-8                                                                               
+U13   MAX31855KASA+         MAX31855SO-8                  SO-8                                                                               
+U14   MAX31855KASA+         MAX31855SO-8                  SO-8                                                                               
+U15   PMV22EN,215           MOSFET_N-CHANNEL_SINGLESOT-23 SOT-23                        Mosfet - N-Channel - Single                          
+U16   PMV22EN,215           MOSFET_N-CHANNEL_SINGLESOT-23 SOT-23                        Mosfet - N-Channel - Single                          
+U17   PMV160UP,215          MOSFET_P-CHANNEL_SINGLESOT-23 SOT-23                                                                             
+U18   DS1340Z-33+           DS1340SOIC-8                  SOIC-8                                                                             
+U19   MCP3021A5T-E/OT       MCP3021SOT-23A                SOT-23A                                                                            
+X1    ATS060CSM-1           CRYSTALHC-49                  HC-49/US_SM                                                                        
+X2    ABS25-32.768KHz-1-T   CRYSTAL8MM_X_3.8MM            8MM_X_3.8MM                                                                        
