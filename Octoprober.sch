@@ -2057,43 +2057,6 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <wire x1="14.5" y1="-1" x2="-13" y2="-1" width="0.127" layer="21"/>
 <text x="10.9" y="-0.8" size="0.8128" layer="25" font="vector">&gt;NAME</text>
 </package>
-<package name="500075-1517">
-<pad name="D+" x="0" y="-1.3" drill="0.7"/>
-<pad name="ID" x="0.8" y="1.3" drill="0.7"/>
-<pad name="GND" x="1.6" y="-1.3" drill="0.7"/>
-<pad name="D-" x="-0.8" y="1.3" drill="0.7"/>
-<pad name="5V" x="-1.6" y="-1.3" drill="0.7"/>
-<wire x1="-3.325" y1="-0.875" x2="-3.325" y2="0.875" width="0.127" layer="46"/>
-<wire x1="-3.325" y1="0.875" x2="-3.975" y2="0.875" width="0.127" layer="46" curve="180"/>
-<wire x1="-3.975" y1="-0.875" x2="-3.975" y2="0.875" width="0.127" layer="46"/>
-<wire x1="-3.325" y1="-0.875" x2="-3.975" y2="-0.875" width="0.127" layer="46" curve="-180"/>
-<wire x1="3.975" y1="-0.875" x2="3.975" y2="0.875" width="0.127" layer="46"/>
-<wire x1="3.975" y1="0.875" x2="3.325" y2="0.875" width="0.127" layer="46" curve="180"/>
-<wire x1="3.325" y1="-0.875" x2="3.325" y2="0.875" width="0.127" layer="46"/>
-<wire x1="3.975" y1="-0.875" x2="3.325" y2="-0.875" width="0.127" layer="46" curve="-180"/>
-<smd name="P$1" x="-3.65" y="0" dx="3.9" dy="1.4" layer="1" roundness="100" rot="R90"/>
-<smd name="P$2" x="3.65" y="0" dx="3.9" dy="1.4" layer="1" roundness="100" rot="R90"/>
-<smd name="P$3" x="-3.65" y="0" dx="3.9" dy="1.4" layer="16" roundness="100" rot="R90"/>
-<smd name="P$4" x="3.65" y="0" dx="3.9" dy="1.4" layer="16" roundness="100" rot="R90"/>
-<wire x1="-3.85" y1="2.4" x2="3.85" y2="2.4" width="0.127" layer="21"/>
-<wire x1="-3.85" y1="-2.3" x2="3.85" y2="-2.3" width="0.127" layer="21"/>
-<text x="-4" y="3" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-<hole x="-3.65" y="0" drill="0.6"/>
-<hole x="-3.65" y="0" drill="0.6"/>
-<hole x="3.65" y="0" drill="0.6"/>
-<hole x="3.65" y="0.3" drill="0.6"/>
-<hole x="3.65" y="0.6" drill="0.6"/>
-<hole x="3.65" y="0.9" drill="0.6"/>
-<hole x="3.65" y="-0.3" drill="0.6"/>
-<hole x="3.65" y="-0.6" drill="0.6"/>
-<hole x="3.65" y="-0.9" drill="0.6"/>
-<hole x="-3.65" y="0.3" drill="0.6"/>
-<hole x="-3.65" y="0.6" drill="0.6"/>
-<hole x="-3.65" y="0.9" drill="0.6"/>
-<hole x="-3.65" y="-0.3" drill="0.6"/>
-<hole x="-3.65" y="-0.6" drill="0.6"/>
-<hole x="-3.65" y="-0.9" drill="0.6"/>
-</package>
 <package name="10118193-0001LF">
 <smd name="3" x="0" y="2.54" dx="0.4" dy="1.35" layer="1" rot="R180"/>
 <smd name="4" x="0.65" y="2.54" dx="0.4" dy="1.35" layer="1" rot="R180"/>
@@ -2156,14 +2119,50 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <pad name="P$1" x="-1.8796" y="0" drill="2"/>
 <pad name="P$2" x="2.0828" y="0" drill="2"/>
 <text x="-5.08" y="5.7912" size="0.8128" layer="21" font="vector">&gt;NAME</text>
-<wire x1="-5.08" y1="5" x2="-5.08" y2="-3.73" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-3.73" x2="-5.08" y2="-5" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="5" x2="-5.08" y2="3.89" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="3.89" x2="-5.08" y2="-5" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="-5" x2="5.08" y2="-5" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-5" x2="5.08" y2="-3.73" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-3.73" x2="5.08" y2="5" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-5" x2="5.08" y2="3.89" width="0.127" layer="21"/>
+<wire x1="5.08" y1="3.89" x2="5.08" y2="5" width="0.127" layer="21"/>
 <wire x1="5.08" y1="5" x2="-5.08" y2="5" width="0.127" layer="21"/>
-<circle x="5.08" y="-5" radius="1.27" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-3.73" x2="5.08" y2="-3.73" width="0.127" layer="21"/>
+<circle x="-5.08" y="5.16" radius="1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="3.89" x2="5.08" y2="3.89" width="0.127" layer="21"/>
+</package>
+<package name="500075-1517">
+<pad name="D+" x="0" y="-1.3" drill="0.7"/>
+<pad name="ID" x="0.8" y="1.3" drill="0.7"/>
+<pad name="GND" x="1.6" y="-1.3" drill="0.7"/>
+<pad name="D-" x="-0.8" y="1.3" drill="0.7"/>
+<pad name="5V" x="-1.6" y="-1.3" drill="0.7"/>
+<wire x1="-3.325" y1="-0.875" x2="-3.325" y2="0.875" width="0.127" layer="46"/>
+<wire x1="-3.325" y1="0.875" x2="-3.975" y2="0.875" width="0.127" layer="46" curve="180"/>
+<wire x1="-3.975" y1="-0.875" x2="-3.975" y2="0.875" width="0.127" layer="46"/>
+<wire x1="-3.325" y1="-0.875" x2="-3.975" y2="-0.875" width="0.127" layer="46" curve="-180"/>
+<wire x1="3.975" y1="-0.875" x2="3.975" y2="0.875" width="0.127" layer="46"/>
+<wire x1="3.975" y1="0.875" x2="3.325" y2="0.875" width="0.127" layer="46" curve="180"/>
+<wire x1="3.325" y1="-0.875" x2="3.325" y2="0.875" width="0.127" layer="46"/>
+<wire x1="3.975" y1="-0.875" x2="3.325" y2="-0.875" width="0.127" layer="46" curve="-180"/>
+<smd name="P$1" x="-3.65" y="0" dx="3.9" dy="1.4" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="P$2" x="3.65" y="0" dx="3.9" dy="1.4" layer="1" roundness="100" rot="R90" cream="no"/>
+<smd name="P$3" x="-3.65" y="0" dx="3.9" dy="1.4" layer="16" roundness="100" rot="R90" cream="no"/>
+<smd name="P$4" x="3.65" y="0" dx="3.9" dy="1.4" layer="16" roundness="100" rot="R90" cream="no"/>
+<wire x1="-3.85" y1="2.4" x2="3.85" y2="2.4" width="0.127" layer="21"/>
+<wire x1="-3.85" y1="-2.3" x2="3.85" y2="-2.3" width="0.127" layer="21"/>
+<text x="-4" y="3" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<hole x="-3.65" y="0" drill="0.6"/>
+<hole x="-3.65" y="0" drill="0.6"/>
+<hole x="3.65" y="0" drill="0.6"/>
+<hole x="3.65" y="0.3" drill="0.6"/>
+<hole x="3.65" y="0.6" drill="0.6"/>
+<hole x="3.65" y="0.9" drill="0.6"/>
+<hole x="3.65" y="-0.3" drill="0.6"/>
+<hole x="3.65" y="-0.6" drill="0.6"/>
+<hole x="3.65" y="-0.9" drill="0.6"/>
+<hole x="-3.65" y="0.6" drill="0.6"/>
+<hole x="-3.65" y="0.9" drill="0.6"/>
+<hole x="-3.65" y="-0.3" drill="0.6"/>
+<hole x="-3.65" y="-0.6" drill="0.6"/>
+<hole x="-3.65" y="-0.9" drill="0.6"/>
 </package>
 </packages>
 <symbols>
@@ -13613,10 +13612,10 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <wire x1="80" y1="-36" x2="80" y2="0" width="0.127" layer="21"/>
 <wire x1="80" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
 <text x="0" y="2.5" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-<wire x1="4.2" y1="-5" x2="75.8" y2="-5" width="0" layer="20"/>
-<wire x1="75.8" y1="-5" x2="75.8" y2="-31.45" width="0" layer="20"/>
-<wire x1="75.8" y1="-31.45" x2="4.2" y2="-31.45" width="0" layer="20"/>
-<wire x1="4.2" y1="-31.45" x2="4.2" y2="-5" width="0" layer="20"/>
+<wire x1="4" y1="-4.8" x2="76" y2="-4.8" width="0" layer="20"/>
+<wire x1="76" y1="-4.8" x2="76" y2="-32" width="0" layer="20"/>
+<wire x1="76" y1="-32" x2="4" y2="-32" width="0" layer="20"/>
+<wire x1="4" y1="-32" x2="4" y2="-4.8" width="0" layer="20"/>
 </package>
 <package name="CHAR_DISPLAY_1602_4_HOLE">
 <pad name="1" x="8" y="-2.5" drill="1"/>
