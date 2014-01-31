@@ -14245,7 +14245,7 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <part name="C14" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.1uF"/>
 <part name="U$1" library="PP_Aesthetics" deviceset="LHE_FRAME" device="">
 <attribute name="DNAME" value="Parker Dillmann"/>
-<attribute name="REVNUM" value="REV 0"/>
+<attribute name="REVNUM" value="REV 1"/>
 </part>
 <part name="LCD1" library="PP_Displays" deviceset="HD44780_LCD" device="1602_COUNTERSINK"/>
 <part name="P1" library="PP_Passives" deviceset="TC33X-1" device="TC33X-1" value="TC33X-2-103E"/>
@@ -14766,11 +14766,6 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <junction x="-35.56" y="-43.18"/>
 </segment>
 <segment>
-<pinref part="LCD1" gate="G$1" pin="VCC"/>
-<wire x1="-139.7" y1="27.94" x2="-147.32" y2="27.94" width="0.1524" layer="91"/>
-<label x="-147.32" y="27.94" size="0.8128" layer="95" font="vector"/>
-</segment>
-<segment>
 <pinref part="LCD1" gate="G$1" pin="R/W"/>
 <wire x1="-149.86" y1="20.32" x2="-139.7" y2="20.32" width="0.1524" layer="91"/>
 <label x="-147.32" y="20.32" size="0.8128" layer="95" font="vector"/>
@@ -14994,6 +14989,11 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <pinref part="C39" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="-121.92" x2="86.36" y2="-127" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="LCD1" gate="G$1" pin="VSS"/>
+<wire x1="-139.7" y1="30.48" x2="-147.32" y2="30.48" width="0.1524" layer="91"/>
+<label x="-147.32" y="30.48" size="0.8128" layer="95" font="vector"/>
+</segment>
 </net>
 <net name="RES" class="0">
 <segment>
@@ -15114,15 +15114,6 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <wire x1="76.2" y1="-22.86" x2="76.2" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="76.2" y="-22.86"/>
 <label x="78.74" y="-22.86" size="0.8128" layer="95" font="vector"/>
-</segment>
-<segment>
-<pinref part="LCD1" gate="G$1" pin="VSS"/>
-<wire x1="-139.7" y1="30.48" x2="-149.86" y2="30.48" width="0.1524" layer="91"/>
-<label x="-147.32" y="30.48" size="0.8128" layer="95" font="vector"/>
-<pinref part="P1" gate="G$1" pin="1_CCW"/>
-<wire x1="-160.02" y1="30.48" x2="-160.02" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-160.02" y1="33.02" x2="-149.86" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-149.86" y1="33.02" x2="-149.86" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C15" gate="G$1" pin="1"/>
@@ -15256,6 +15247,16 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <wire x1="144.78" y1="-93.98" x2="144.78" y2="-96.52" width="0.1524" layer="91"/>
 <label x="132.08" y="-101.6" size="0.8128" layer="95" font="vector"/>
 <pinref part="U19" gate="G$1" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="LCD1" gate="G$1" pin="VCC"/>
+<wire x1="-139.7" y1="27.94" x2="-147.32" y2="27.94" width="0.1524" layer="91"/>
+<label x="-147.32" y="27.94" size="0.8128" layer="95" font="vector"/>
+<pinref part="P1" gate="G$1" pin="1_CCW"/>
+<wire x1="-160.02" y1="30.48" x2="-160.02" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="33.02" x2="-152.4" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="33.02" x2="-152.4" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="27.94" x2="-147.32" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SD_RW" class="0">
