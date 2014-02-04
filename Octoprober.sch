@@ -1163,16 +1163,6 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <wire x1="-4.5" y1="-2.5" x2="-4.5" y2="2.5" width="0.127" layer="21"/>
 <text x="-4.5" y="3" size="0.8128" layer="25" font="vector">&gt;NAME</text>
 </package>
-<package name="TC33_TRIMMER">
-<smd name="2" x="0" y="1.45" dx="1.6" dy="1.5" layer="1" rot="R180"/>
-<smd name="1" x="-1" y="-1.8" dx="1.2" dy="1.2" layer="1"/>
-<smd name="3" x="1" y="-1.8" dx="1.2" dy="1.2" layer="1"/>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="2.54" width="0.127" layer="21"/>
-<wire x1="2.54" y1="2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
-<text x="-2.54" y="3.81" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-</package>
 <package name="SOD-123">
 <description>SOD-123 Footprint</description>
 <smd name="1" x="-1.27" y="0" dx="1.3" dy="1.8" layer="1"/>
@@ -1439,29 +1429,6 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
-<symbol name="TRIMMER">
-<pin name="1_CCW" x="-10.16" y="0" visible="off" length="short"/>
-<pin name="3_CW" x="10.16" y="0" visible="off" length="short" rot="R180"/>
-<pin name="2_WIPER" x="0" y="5.08" visible="off" length="short" rot="R270"/>
-<wire x1="-3.81" y1="0" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-1.27" x2="3.81" y2="0" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="0" x2="-5.08" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="1.27" x2="-6.35" y2="0" width="0.254" layer="94"/>
-<wire x1="-6.35" y1="0" x2="-7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="3.81" y1="0" x2="5.08" y2="1.27" width="0.254" layer="94"/>
-<wire x1="5.08" y1="1.27" x2="6.35" y2="0" width="0.254" layer="94"/>
-<wire x1="6.35" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<polygon width="0.254" layer="94">
-<vertex x="0" y="1.27"/>
-<vertex x="-1.27" y="2.54"/>
-<vertex x="1.27" y="2.54"/>
-</polygon>
-<text x="-3.81" y="-2.54" size="0.8128" layer="94" font="vector">CLOCKWISE -&gt;</text>
-<text x="-6.35" y="-5.08" size="0.8128" layer="95" font="vector">&gt;NAME</text>
-<text x="-1.27" y="-5.08" size="0.8128" layer="96" font="vector">&gt;VALUE</text>
-</symbol>
 <symbol name="DIODE">
 <description>Symbol for Diodes</description>
 <pin name="CATHODE" x="-2.54" y="0" visible="off" length="short"/>
@@ -1639,23 +1606,6 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TC33X-1" prefix="P" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="TRIMMER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="TC33X-1" package="TC33_TRIMMER">
-<connects>
-<connect gate="G$1" pin="1_CCW" pad="1"/>
-<connect gate="G$1" pin="2_WIPER" pad="2"/>
-<connect gate="G$1" pin="3_CW" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14247,7 +14197,6 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <attribute name="REVNUM" value="REV 1"/>
 </part>
 <part name="LCD1" library="PP_Displays" deviceset="HD44780_LCD" device="1602_COUNTERSINK"/>
-<part name="P1" library="PP_Passives" deviceset="TC33X-1" device="TC33X-1" value="TC33X-2-103E"/>
 <part name="U7" library="PP_Sensors" deviceset="MAX31855" device="SO-8" value="MAX31855KASA+"/>
 <part name="C15" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.1uF"/>
 <part name="C16" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.01uF"/>
@@ -14284,7 +14233,6 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <part name="U6" library="PP_DigitalIC" deviceset="74HCT2G04GV,125" device="TTSOP-6" value="74HC2G04GV,125"/>
 <part name="R19" library="PP_Passives" deviceset="RESISTOR" device="0402" value="10K"/>
 <part name="R20" library="PP_Passives" deviceset="RESISTOR" device="0402" value="10K"/>
-<part name="U15" library="PP_DiscreteSemi" deviceset="MOSFET_N-CHANNEL_SINGLE" device="SOT-23" value="PMV22EN,215"/>
 <part name="SW2" library="PP_Electromechanical" deviceset="SPST" device="EVQ-Q2203W" value="EVQ-Q2203W"/>
 <part name="SW3" library="PP_Electromechanical" deviceset="SPST" device="EVQ-Q2203W" value="EVQ-Q2203W"/>
 <part name="SW4" library="PP_Electromechanical" deviceset="SPST" device="EVQ-Q2203W" value="EVQ-Q2203W"/>
@@ -14348,6 +14296,7 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <part name="R30" library="PP_Passives" deviceset="RESISTOR" device="0402" value="254K"/>
 <part name="C39" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.1uF"/>
 <part name="U19" library="PP_DigitalIC" deviceset="MCP3021" device="SOT-23A" value="MCP3021A5T-E/OT"/>
+<part name="R31" library="PP_Passives" deviceset="RESISTOR" device="0402" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -14381,7 +14330,7 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <instance part="J1" gate="G$1" x="-114.3" y="-33.02"/>
 <instance part="L1" gate="G$1" x="-93.98" y="-27.94"/>
 <instance part="U4" gate="G$1" x="-60.96" y="-58.42"/>
-<instance part="C11" gate="G$1" x="-81.28" y="-73.66"/>
+<instance part="C11" gate="G$1" x="-81.28" y="-76.2"/>
 <instance part="R10" gate="G$1" x="-88.9" y="-53.34" rot="R270"/>
 <instance part="R11" gate="G$1" x="-93.98" y="-53.34" rot="R270"/>
 <instance part="C12" gate="G$1" x="-33.02" y="-53.34" rot="R90"/>
@@ -14396,7 +14345,6 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <attribute name="REVNUM" x="-287.02" y="-129.54" size="0.8128" layer="96" font="vector" display="off"/>
 </instance>
 <instance part="LCD1" gate="G$1" x="-129.54" y="12.7"/>
-<instance part="P1" gate="G$1" x="-160.02" y="20.32" rot="R270"/>
 <instance part="U7" gate="G$1" x="-292.1" y="7.62"/>
 <instance part="C15" gate="G$1" x="-325.12" y="10.16"/>
 <instance part="C16" gate="G$1" x="-317.5" y="10.16"/>
@@ -14433,7 +14381,6 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <instance part="U6" gate="G$1" x="10.16" y="-63.5"/>
 <instance part="R19" gate="G$1" x="7.62" y="-76.2"/>
 <instance part="R20" gate="G$1" x="-17.78" y="-63.5" rot="R180"/>
-<instance part="U15" gate="G$1" x="-149.86" y="-17.78"/>
 <instance part="SW2" gate="G$1" x="-152.4" y="-45.72"/>
 <instance part="SW3" gate="G$1" x="-152.4" y="-60.96"/>
 <instance part="SW4" gate="G$1" x="-152.4" y="-76.2"/>
@@ -14497,6 +14444,7 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <instance part="R30" gate="G$1" x="93.98" y="-119.38" rot="R270"/>
 <instance part="C39" gate="G$1" x="86.36" y="-116.84"/>
 <instance part="U19" gate="G$1" x="119.38" y="-109.22"/>
+<instance part="R31" gate="G$1" x="-91.44" y="-76.2" rot="MR90"/>
 </instances>
 <busses>
 </busses>
@@ -14747,7 +14695,7 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <label x="-114.3" y="-86.36" size="0.8128" layer="95" font="vector"/>
 </segment>
 <segment>
-<wire x1="-81.28" y1="-78.74" x2="-81.28" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="-81.28" x2="-81.28" y2="-86.36" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="GND"/>
 <wire x1="-81.28" y1="-86.36" x2="-66.04" y2="-86.36" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="-86.36" x2="-66.04" y2="-81.28" width="0.1524" layer="91"/>
@@ -14766,12 +14714,8 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 </segment>
 <segment>
 <pinref part="LCD1" gate="G$1" pin="R/W"/>
-<wire x1="-149.86" y1="20.32" x2="-139.7" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="20.32" x2="-139.7" y2="20.32" width="0.1524" layer="91"/>
 <label x="-147.32" y="20.32" size="0.8128" layer="95" font="vector"/>
-<pinref part="P1" gate="G$1" pin="3_CW"/>
-<wire x1="-160.02" y1="10.16" x2="-160.02" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-160.02" y1="7.62" x2="-149.86" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-149.86" y1="7.62" x2="-149.86" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C15" gate="G$1" pin="2"/>
@@ -14933,12 +14877,6 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <wire x1="0" y1="-63.5" x2="-12.7" y2="-63.5" width="0.1524" layer="91"/>
 <label x="-7.62" y="-63.5" size="0.8128" layer="95" font="vector"/>
 <pinref part="R20" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="U15" gate="G$1" pin="SOURCE"/>
-<wire x1="-149.86" y1="-25.4" x2="-149.86" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="-149.86" y1="-27.94" x2="-165.1" y2="-27.94" width="0.1524" layer="91"/>
-<label x="-165.1" y="-27.94" size="0.8128" layer="95" font="vector"/>
 </segment>
 <segment>
 <pinref part="SW2" gate="G$1" pin="A"/>
@@ -15251,11 +15189,12 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <pinref part="LCD1" gate="G$1" pin="VCC"/>
 <wire x1="-139.7" y1="27.94" x2="-147.32" y2="27.94" width="0.1524" layer="91"/>
 <label x="-147.32" y="27.94" size="0.8128" layer="95" font="vector"/>
-<pinref part="P1" gate="G$1" pin="1_CCW"/>
-<wire x1="-160.02" y1="30.48" x2="-160.02" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-160.02" y1="33.02" x2="-152.4" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-152.4" y1="33.02" x2="-152.4" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="-152.4" y1="27.94" x2="-147.32" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R31" gate="G$1" pin="1"/>
+<wire x1="-91.44" y1="-81.28" x2="-91.44" y2="-86.36" width="0.1524" layer="91"/>
+<wire x1="-91.44" y1="-86.36" x2="-86.36" y2="-86.36" width="0.1524" layer="91"/>
+<label x="-88.9" y="-86.36" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="SD_RW" class="0">
@@ -15366,13 +15305,9 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <wire x1="-55.88" y1="-30.48" x2="-81.28" y2="-30.48" width="0.1524" layer="91"/>
 <wire x1="-81.28" y1="-30.48" x2="-81.28" y2="-50.8" width="0.1524" layer="91"/>
 <label x="-81.28" y="-30.48" size="0.8128" layer="95" font="vector"/>
-<pinref part="U4" gate="G$1" pin="RESET#"/>
-<wire x1="-81.28" y1="-50.8" x2="-81.28" y2="-68.58" width="0.1524" layer="91"/>
-<wire x1="-81.28" y1="-68.58" x2="-81.28" y2="-71.12" width="0.1524" layer="91"/>
-<wire x1="-76.2" y1="-68.58" x2="-81.28" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="-50.8" x2="-81.28" y2="-73.66" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="3V3OUT"/>
 <wire x1="-76.2" y1="-50.8" x2="-81.28" y2="-50.8" width="0.1524" layer="91"/>
-<junction x="-81.28" y="-68.58"/>
 <junction x="-81.28" y="-50.8"/>
 </segment>
 </net>
@@ -15464,20 +15399,15 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <net name="CONTRAST" class="0">
 <segment>
 <pinref part="LCD1" gate="G$1" pin="VLC"/>
-<wire x1="-154.94" y1="20.32" x2="-152.4" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-152.4" y1="20.32" x2="-152.4" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="-152.4" y1="25.4" x2="-139.7" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="25.4" x2="-139.7" y2="25.4" width="0.1524" layer="91"/>
 <label x="-147.32" y="25.4" size="0.8128" layer="95" font="vector"/>
-<pinref part="P1" gate="G$1" pin="2_WIPER"/>
 </segment>
 </net>
 <net name="BK_GND" class="0">
 <segment>
 <pinref part="LCD1" gate="G$1" pin="BK_GND"/>
-<wire x1="-139.7" y1="-7.62" x2="-149.86" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-139.7" y1="-7.62" x2="-147.32" y2="-7.62" width="0.1524" layer="91"/>
 <label x="-147.32" y="-7.62" size="0.8128" layer="95" font="vector"/>
-<pinref part="U15" gate="G$1" pin="DRAIN"/>
-<wire x1="-149.86" y1="-10.16" x2="-149.86" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LCD_E" class="0">
@@ -16179,16 +16109,19 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <wire x1="116.84" y1="-50.8" x2="149.86" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="BK_GATE" class="0">
-<segment>
-<pinref part="U15" gate="G$1" pin="GATE"/>
-<wire x1="-160.02" y1="-17.78" x2="-165.1" y2="-17.78" width="0.1524" layer="91"/>
-<label x="-165.1" y="-17.78" size="0.8128" layer="95" font="vector"/>
-</segment>
+<net name="FT230_RST" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="P21"/>
 <wire x1="10.16" y1="-2.54" x2="20.32" y2="-2.54" width="0.1524" layer="91"/>
 <label x="12.7" y="-2.54" size="0.8128" layer="95" font="vector"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="RESET#"/>
+<wire x1="-76.2" y1="-68.58" x2="-88.9" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="-68.58" x2="-91.44" y2="-68.58" width="0.1524" layer="91"/>
+<pinref part="R31" gate="G$1" pin="2"/>
+<wire x1="-91.44" y1="-68.58" x2="-91.44" y2="-71.12" width="0.1524" layer="91"/>
+<label x="-86.36" y="-68.58" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="S_P_G" class="0">
