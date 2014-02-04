@@ -2459,9 +2459,9 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 </device>
 <device name="SOT-223_ALT" package="SOT-223">
 <connects>
-<connect gate="G$1" pin="GND" pad="COM2 IN"/>
+<connect gate="G$1" pin="GND" pad="IN"/>
 <connect gate="G$1" pin="IN" pad="OUT"/>
-<connect gate="G$1" pin="OUT" pad="COM1"/>
+<connect gate="G$1" pin="OUT" pad="COM1 COM2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13612,10 +13612,10 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <wire x1="80" y1="-36" x2="80" y2="0" width="0.127" layer="21"/>
 <wire x1="80" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
 <text x="0" y="2.5" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-<wire x1="4" y1="-4.8" x2="76" y2="-4.8" width="0" layer="20"/>
-<wire x1="76" y1="-4.8" x2="76" y2="-32" width="0" layer="20"/>
-<wire x1="76" y1="-32" x2="4" y2="-32" width="0" layer="20"/>
-<wire x1="4" y1="-32" x2="4" y2="-4.8" width="0" layer="20"/>
+<wire x1="4.2" y1="-5" x2="75.8" y2="-5" width="0" layer="20"/>
+<wire x1="75.8" y1="-5" x2="75.8" y2="-31.45" width="0" layer="20"/>
+<wire x1="75.8" y1="-31.45" x2="4.2" y2="-31.45" width="0" layer="20"/>
+<wire x1="4.2" y1="-31.45" x2="4.2" y2="-5" width="0" layer="20"/>
 </package>
 <package name="CHAR_DISPLAY_1602_4_HOLE">
 <pad name="1" x="8" y="-2.5" drill="1"/>

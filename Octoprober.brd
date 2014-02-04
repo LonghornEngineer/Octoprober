@@ -5365,10 +5365,10 @@
 <wire x1="80" y1="-36" x2="80" y2="0" width="0.127" layer="21"/>
 <wire x1="80" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
 <text x="0" y="2.5" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-<wire x1="4" y1="-4.8" x2="76" y2="-4.8" width="0" layer="20"/>
-<wire x1="76" y1="-4.8" x2="76" y2="-32" width="0" layer="20"/>
-<wire x1="76" y1="-32" x2="4" y2="-32" width="0" layer="20"/>
-<wire x1="4" y1="-32" x2="4" y2="-4.8" width="0" layer="20"/>
+<wire x1="4.2" y1="-5" x2="75.8" y2="-5" width="0" layer="20"/>
+<wire x1="75.8" y1="-5" x2="75.8" y2="-31.45" width="0" layer="20"/>
+<wire x1="75.8" y1="-31.45" x2="4.2" y2="-31.45" width="0" layer="20"/>
+<wire x1="4.2" y1="-31.45" x2="4.2" y2="-5" width="0" layer="20"/>
 </package>
 </packages>
 </library>
@@ -6196,7 +6196,6 @@ design rules under a new name.</description>
 <contactref element="C9" pad="2"/>
 <contactref element="C10" pad="2"/>
 <contactref element="C7" pad="2"/>
-<contactref element="U3" pad="COM2"/>
 <contactref element="U3" pad="IN"/>
 <contactref element="C8" pad="2"/>
 <contactref element="J1" pad="5"/>
@@ -6351,12 +6350,6 @@ design rules under a new name.</description>
 <wire x1="74.76" y1="16.086" x2="74.93" y2="16.256" width="0.254" layer="1"/>
 <via x="74.93" y="16.256" extent="1-16" drill="0.5"/>
 <wire x1="74.93" y1="16.256" x2="74.93" y2="16.764" width="0.254" layer="2"/>
-<polygon width="0.254" layer="1">
-<vertex x="40.132" y="8.89"/>
-<vertex x="40.132" y="23.622"/>
-<vertex x="23.622" y="23.622"/>
-<vertex x="23.622" y="8.89"/>
-</polygon>
 <wire x1="28.956" y1="5.192" x2="29.706" y2="4.442" width="0.254" layer="1"/>
 <wire x1="29.706" y1="4.442" x2="31.496" y2="4.442" width="0.254" layer="1"/>
 <wire x1="36.83" y1="5.192" x2="36.08" y2="4.442" width="0.254" layer="1"/>
@@ -6366,12 +6359,6 @@ design rules under a new name.</description>
 <via x="33.02" y="5.842" extent="1-16" drill="0.5"/>
 <wire x1="33.02" y1="5.842" x2="32.512" y2="5.842" width="0.254" layer="2"/>
 <wire x1="31.496" y1="4.442" x2="33.02" y2="4.442" width="0.254" layer="1"/>
-<via x="30.226" y="18.034" extent="1-16" drill="0.5"/>
-<via x="31.75" y="18.034" extent="1-16" drill="0.5"/>
-<via x="33.274" y="18.034" extent="1-16" drill="0.5"/>
-<via x="33.274" y="13.716" extent="1-16" drill="0.5"/>
-<via x="31.75" y="13.716" extent="1-16" drill="0.5"/>
-<via x="30.226" y="13.716" extent="1-16" drill="0.5"/>
 <wire x1="46.101" y1="5.104" x2="46.101" y2="3.683" width="0.254" layer="1"/>
 <wire x1="46.101" y1="3.683" x2="46.228" y2="3.556" width="0.254" layer="1"/>
 <via x="46.228" y="3.556" extent="1-16" drill="0.5"/>
@@ -6553,6 +6540,12 @@ design rules under a new name.</description>
 <via x="88.392" y="6.858" extent="1-16" drill="0.5"/>
 <wire x1="88.392" y1="6.858" x2="87.884" y2="6.858" width="0.254" layer="2"/>
 <contactref element="LCD1" pad="1"/>
+<wire x1="29.45" y1="9.906" x2="29.45" y2="8.622" width="0.254" layer="1"/>
+<wire x1="29.45" y1="8.622" x2="28.194" y2="7.366" width="0.254" layer="1"/>
+<wire x1="28.194" y1="7.366" x2="27.94" y2="7.112" width="0.254" layer="1"/>
+<wire x1="27.94" y1="7.112" x2="27.94" y2="5.334" width="0.254" layer="1"/>
+<wire x1="27.94" y1="5.334" x2="28.082" y2="5.192" width="0.254" layer="1"/>
+<wire x1="28.082" y1="5.192" x2="28.956" y2="5.192" width="0.254" layer="1"/>
 </signal>
 <signal name="RES">
 <contactref element="U1" pad="7"/>
@@ -6833,6 +6826,19 @@ design rules under a new name.</description>
 <wire x1="4.318" y1="44.92" x2="4.318" y2="43.434" width="0.254" layer="1"/>
 <via x="4.318" y="43.434" extent="1-16" drill="0.5"/>
 <wire x1="4.318" y1="43.434" x2="4.318" y2="42.926" width="0.254" layer="15"/>
+<contactref element="U3" pad="COM2"/>
+<polygon width="0.254" layer="1">
+<vertex x="40.132" y="8.89"/>
+<vertex x="40.132" y="23.622"/>
+<vertex x="23.622" y="23.622"/>
+<vertex x="23.622" y="8.89"/>
+</polygon>
+<via x="30.226" y="13.716" extent="1-16" drill="0.5"/>
+<via x="31.75" y="13.716" extent="1-16" drill="0.5"/>
+<via x="33.274" y="13.716" extent="1-16" drill="0.5"/>
+<via x="33.274" y="18.034" extent="1-16" drill="0.5"/>
+<via x="31.75" y="18.034" extent="1-16" drill="0.5"/>
+<via x="30.226" y="18.034" extent="1-16" drill="0.5"/>
 </signal>
 <signal name="SD_RW">
 <contactref element="SD1" pad="8"/>
