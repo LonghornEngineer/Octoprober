@@ -67,7 +67,7 @@ PUB main
       LCD.MOVE(1,1)
       LCD.STR(STRING("UP PRESSED"))
 
-    if INA[SW_DWN] == 0
+    if INA[SW_DWN] == 0                        
       LCD.CLEAR 
       LCD.MOVE(1,1)
       LCD.STR(STRING("DOWN PRESSED"))
