@@ -4,7 +4,7 @@ Octoprober
 Code for OctoPROBER
 
 OctoPROBER.spin
---LCD_16x2_4Bit.spin
+--LCD_16x2_Serial.spin
 ----Timing.spin
 
 Written for the Parallax Propeller. 

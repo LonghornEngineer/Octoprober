@@ -8,12 +8,10 @@ CON
         PWR_SW    = 25
         FT230_RST = 21
 
-        LCD_RS    = 4
-        LCD_E     = 26
-        LCD_D4    = 5
-        LCD_D5    = 6
-        LCD_D6    = 7
-        LCD_D7    = 8
+        LCD_SCL   = 6
+        LCD_SDO   = 7
+        LCD_SDI   = 8
+        LCD_CS    = 4
 
         SW_UP     = 22
         SW_SEL    = 23
@@ -24,9 +22,7 @@ VAR
   long  symbol
    
 OBJ
-  LCD : "LCD_16X2_4BIT"
-  
-
+  LCD : "LCD_16X2_SERIAL"
   
 PUB main
   'Setup Soft Power Switch
@@ -39,7 +35,7 @@ PUB main
   
 
   'Setup LCD
-  LCD.START(LCD_RS, LCD_E, LCD_D4, LCD_D7)   
+  LCD.START(LCD_SCL, LCD_SDI, LCD_SDO, LCD_CS) 
   LCD.MOVE(1,1) 
   LCD.STR(STRING("OctoPROBER says"))
 
