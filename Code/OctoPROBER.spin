@@ -71,9 +71,9 @@ PUB main
       LCD.CLEAR 
       LCD.MOVE(1,1)
       LCD.STR(STRING("DOWN PRESSED"))
-
-    if INA[USB_RST] == 1
-      REBOOT
+      
+      if INA[USB_RST] == 1
+        REBOOT
               
     waitcnt(cnt+10000)
 
