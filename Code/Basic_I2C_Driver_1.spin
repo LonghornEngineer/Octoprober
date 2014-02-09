@@ -232,7 +232,7 @@ PUB WriteByte(SCL, devSel, addrReg, data)
    if WritePage(SCL, devSel, addrReg, @data, 1)
       return true
    return false
-
+   
 PUB WriteWord(SCL, devSel, addrReg, data)
 '' Write out a single word of i2c data.  Device select code is devSel.  Device
 '' starting address is addrReg.  The device select code is modified using the
