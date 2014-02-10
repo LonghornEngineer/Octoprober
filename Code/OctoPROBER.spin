@@ -26,6 +26,18 @@ CON
 
         SCL       = 28
         SDA       = 29
+
+        TC_SCK    = 9
+        TC_SO     = 10
+        TC_CS0    = 11
+        TC_CS1    = 12
+        TC_CS2    = 13
+        TC_CS3    = 14
+        TC_CS4    = 15
+        TC_CS5    = 16
+        TC_CS6    = 17
+        TC_CS7    = 18
+        
         
 
 VAR
@@ -34,11 +46,13 @@ VAR
   word ADC_Temp
   byte RTC_TEST[8]
   byte i
+  word Temperature
    
 OBJ
   LCD : "LCD_16X2_SERIAL"
   I2C : "Basic_I2C_Driver_1"
-  pst : "Parallax Serial Terminal"  
+  pst : "Parallax Serial Terminal"
+  TC  : "jm_max31855"
   
 PUB main
   'Setup Soft Power Switch
@@ -53,6 +67,8 @@ PUB main
 
   'Start I2C
   I2C.Initialize(SCL)
+
+  TC.start(TC_CS0, TC_SCK, TC_SO, -1)  
   
 
   'Setup LCD
@@ -85,7 +101,7 @@ PUB main
     LCD.CLEAR
     LCD.MOVE(1,1)
     LCD.DEC(ADC_Value)
-    LCD.MOVE(10,1)
+    LCD.MOVE(5,1)
     LCD.DEC(INA[CHARGING])
 
     LCD.MOVE(1,2)
@@ -98,6 +114,12 @@ PUB main
     LCD.STR(STRING(":"))    
     LCD.DEC((RTC_TEST[0] & %0111_0000)>>4)
     LCD.DEC((RTC_TEST[0] & %0000_1111))
+
+    Temperature := TC.read_tc(1)
+
+    LCD.MOVE(7,1)
+    LCD.DEC(Temperature)
+    LCD.STR(STRING("C"))
     
     'Check if Shutdown
     if INA[PWR_SW] == 0
