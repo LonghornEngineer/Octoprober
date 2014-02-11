@@ -2124,6 +2124,64 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <text x="-1.27" y="-4.21" size="0.8128" layer="21" font="vector">&gt;NAME</text>
 <rectangle x1="-1.4478" y1="2.5146" x2="-0.8128" y2="3.1496" layer="21"/>
 </package>
+<package name="KPJX-4S">
+<description>Mouser Part #: 806-KPJX-4S-S
+Manufacturer Part #: KPJX-4S-S
+Manufacturer: Kycon
+Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description>
+<pad name="SHLD" x="0" y="-5.5" drill="2"/>
+<hole x="-2.5" y="-7.5" drill="1.7"/>
+<hole x="2.5" y="-7.5" drill="1.7"/>
+<pad name="4" x="-2.5" y="-11" drill="2"/>
+<pad name="3" x="2.5" y="-11" drill="2"/>
+<pad name="2" x="-2.9" y="-14.65" drill="2"/>
+<pad name="1" x="2.9" y="-14.65" drill="2"/>
+<wire x1="0" y1="0" x2="-7.5" y2="0" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="0" x2="-7.5" y2="-17" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="7.5" y2="0" width="0.127" layer="21"/>
+<wire x1="7.5" y1="0" x2="7.5" y2="-17" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="-17" x2="7.5" y2="-17" width="0.127" layer="21"/>
+<text x="-7.5" y="-18" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+</package>
+<package name="HEADER_01X04_PTH">
+<text x="-1.2462" y="-2.9162" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<pad name="1" x="0" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="0.8" shape="long" rot="R90"/>
+<wire x1="-1.27" y1="1.905" x2="-1.27" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="8.89" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="8.89" y1="-1.905" x2="8.89" y2="1.905" width="0.127" layer="21"/>
+<wire x1="8.89" y1="1.905" x2="-1.27" y2="1.905" width="0.127" layer="21"/>
+<rectangle x1="-1.27" y1="1.27" x2="-0.635" y2="1.905" layer="21"/>
+<pad name="4" x="7.62" y="0" drill="0.8" shape="long" rot="R90"/>
+</package>
+<package name="HEADER_01X04_PTH_ROUND">
+<text x="-5.0562" y="-2.2812" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<pad name="1" x="-3.81" y="0" drill="0.8" rot="R90"/>
+<pad name="2" x="-1.27" y="0" drill="0.8" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="0.8" rot="R90"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-1.27" x2="5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="1.27" width="0.127" layer="21"/>
+<wire x1="5.08" y1="1.27" x2="-5.08" y2="1.27" width="0.127" layer="21"/>
+<rectangle x1="-5.08" y1="0.635" x2="-4.445" y2="1.27" layer="21"/>
+<pad name="4" x="3.81" y="0" drill="0.8" rot="R90"/>
+</package>
+<package name="MOLEX_KK_4">
+<pad name="4" x="5.6388" y="0" drill="1.7018" shape="long" rot="R90"/>
+<pad name="3" x="1.6764" y="0" drill="1.7018" shape="long" rot="R90"/>
+<pad name="2" x="-2.286" y="0" drill="1.7018" shape="long" rot="R90"/>
+<pad name="1" x="-6.2484" y="0" drill="1.7018" shape="long" rot="R90"/>
+<wire x1="-8.1534" y1="5.0038" x2="7.5184" y2="5.0038" width="0.127" layer="21"/>
+<wire x1="7.5184" y1="5.0038" x2="7.5184" y2="3.8862" width="0.127" layer="21"/>
+<wire x1="7.5184" y1="3.8862" x2="7.5184" y2="-5.0038" width="0.127" layer="21"/>
+<wire x1="7.5184" y1="-5.0038" x2="-8.1534" y2="-5.0038" width="0.127" layer="21"/>
+<wire x1="-8.1534" y1="-5.0038" x2="-8.1534" y2="3.8862" width="0.127" layer="21"/>
+<text x="-8.255" y="5.715" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<wire x1="-8.1534" y1="3.8862" x2="-8.1534" y2="5.0038" width="0.127" layer="21"/>
+<wire x1="7.5184" y1="3.8862" x2="-8.1534" y2="3.8862" width="0.127" layer="21"/>
+<circle x="-8.1534" y="5.0038" radius="1.27" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SD_CARD">
@@ -2166,6 +2224,19 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <text x="-3.81" y="-7.62" size="0.8128" layer="96" font="vector">&gt;VALUE</text>
 <pin name="1" x="0" y="0" visible="off" length="short" direction="pas" function="dot"/>
 <pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" function="dot"/>
+</symbol>
+<symbol name="PH_1X04">
+<description>Symbol for 4 pin connectors.</description>
+<wire x1="-3.81" y1="-10.16" x2="3.81" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-10.16" x2="3.81" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="-3.81" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="2.54" x2="-3.81" y2="-10.16" width="0.4064" layer="94"/>
+<text x="-3.81" y="3.175" size="0.8128" layer="95" font="vector">&gt;NAME</text>
+<text x="-3.81" y="-12.7" size="0.8128" layer="96" font="vector">&gt;VALUE</text>
+<pin name="1" x="0" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="0" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="3" x="0" y="-5.08" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="4" x="0" y="-7.62" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2301,6 +2372,58 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PH_1X04" prefix="J" uservalue="yes">
+<description>4 Pin Connectors</description>
+<gates>
+<gate name="G$1" symbol="PH_1X04" x="0" y="0"/>
+</gates>
+<devices>
+<device name="KPJX-4S" package="KPJX-4S">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="HEADER_PTH" package="HEADER_01X04_PTH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="HEADER_PTH_ROUND" package="HEADER_01X04_PTH_ROUND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="KK_4" package="MOLEX_KK_4">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14270,7 +14393,6 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <part name="R26" library="PP_Passives" deviceset="RESISTOR" device="0402" value="100K"/>
 <part name="R27" library="PP_Passives" deviceset="RESISTOR" device="0402" value="300K"/>
 <part name="U$2" library="PP_Aesthetics" deviceset="OCTOPROBER_LOGO" device="NORMAL"/>
-<part name="J2" library="PP_Connectors" deviceset="PH_1X02" device="MOLEX_26-61-4020" value="26-60-4020"/>
 <part name="OP1" library="PP_DigitalIC" deviceset="ACPL-227" device="SOIC-8" value="ACPL-227"/>
 <part name="R28" library="PP_Passives" deviceset="RESISTOR" device="0402" value="120"/>
 <part name="TC1" library="PP_Connectors" deviceset="PH_1X02" device="SCREW_TERM" value="282834-2"/>
@@ -14320,6 +14442,8 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <part name="D12" library="PP_LED" deviceset="LED_SINGLE" device="0402" value="598-8070-107F"/>
 <part name="R32" library="PP_Passives" deviceset="RESISTOR" device="0402" value="330"/>
 <part name="R33" library="PP_Passives" deviceset="RESISTOR" device="0402" value="10K"/>
+<part name="R34" library="PP_Passives" deviceset="RESISTOR" device="0402" value="120"/>
+<part name="J2" library="PP_Connectors" deviceset="PH_1X04" device="HEADER_PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -14422,7 +14546,6 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <instance part="R26" gate="G$1" x="139.7" y="-66.04" rot="R90"/>
 <instance part="R27" gate="G$1" x="132.08" y="-76.2" rot="R180"/>
 <instance part="U$2" gate="G$1" x="-284.48" y="-101.6"/>
-<instance part="J2" gate="G$1" x="63.5" y="-99.06" rot="MR180"/>
 <instance part="OP1" gate="G$1" x="33.02" y="-104.14"/>
 <instance part="R28" gate="G$1" x="17.78" y="-101.6"/>
 <instance part="TC1" gate="G$1" x="-363.22" y="7.62" rot="R180"/>
@@ -14472,6 +14595,8 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <instance part="D12" gate="G$1" x="101.6" y="-27.94" rot="R270"/>
 <instance part="R32" gate="G$1" x="93.98" y="-22.86"/>
 <instance part="R33" gate="G$1" x="-22.86" y="-45.72" rot="R270"/>
+<instance part="R34" gate="G$1" x="17.78" y="-114.3"/>
+<instance part="J2" gate="G$1" x="63.5" y="-101.6"/>
 </instances>
 <busses>
 </busses>
@@ -14568,7 +14693,7 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <pinref part="U19" gate="G$1" pin="SCL"/>
 </segment>
 </net>
-<net name="EXT" class="0">
+<net name="EXT0" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="P27"/>
 <wire x1="10.16" y1="12.7" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
@@ -14955,6 +15080,11 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <pinref part="LCD1" gate="G$1" pin="VSS"/>
 <wire x1="-139.7" y1="30.48" x2="-147.32" y2="30.48" width="0.1524" layer="91"/>
 <label x="-147.32" y="30.48" size="0.8128" layer="95" font="vector"/>
+</segment>
+<segment>
+<pinref part="R34" gate="G$1" pin="1"/>
+<wire x1="12.7" y1="-114.3" x2="7.62" y2="-114.3" width="0.1524" layer="91"/>
+<label x="7.62" y="-114.3" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="RES" class="0">
@@ -16140,17 +16270,19 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <pinref part="OP1" gate="G$1" pin="7"/>
 <wire x1="40.64" y1="-101.6" x2="53.34" y2="-101.6" width="0.1524" layer="91"/>
 <label x="43.18" y="-101.6" size="0.8128" layer="95" font="vector"/>
-<wire x1="53.34" y1="-99.06" x2="53.34" y2="-101.6" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="-99.06" x2="53.34" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="-101.6" x2="53.34" y2="-104.14" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="-104.14" x2="63.5" y2="-104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="EXT_CON_0" class="0">
 <segment>
 <pinref part="OP1" gate="G$1" pin="8"/>
 <label x="43.18" y="-96.52" size="0.8128" layer="95" font="vector"/>
-<wire x1="40.64" y1="-96.52" x2="63.5" y2="-96.52" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="40.64" y1="-96.52" x2="55.88" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="-96.52" x2="55.88" y2="-101.6" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="1"/>
+<wire x1="55.88" y1="-101.6" x2="63.5" y2="-101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RTC_X1" class="0">
@@ -16439,11 +16571,43 @@ Description: Fixed Terminal Blocks 15MM FIXED PCB 2P VERTICAL 85 AMP</descriptio
 <label x="-22.86" y="2.54" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
-<net name="P26" class="0">
+<net name="EXT1" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="P26"/>
 <wire x1="20.32" y1="10.16" x2="10.16" y2="10.16" width="0.1524" layer="91"/>
 <label x="12.7" y="10.16" size="0.8128" layer="95" font="vector"/>
+</segment>
+<segment>
+<pinref part="OP1" gate="G$1" pin="3"/>
+<wire x1="25.4" y1="-109.22" x2="7.62" y2="-109.22" width="0.1524" layer="91"/>
+<label x="7.62" y="-109.22" size="0.8128" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="OP1" gate="G$1" pin="4"/>
+<pinref part="R34" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="-114.3" x2="22.86" y2="-114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="EXT_CON_2" class="0">
+<segment>
+<pinref part="OP1" gate="G$1" pin="6"/>
+<wire x1="40.64" y1="-109.22" x2="53.34" y2="-109.22" width="0.1524" layer="91"/>
+<label x="43.18" y="-109.22" size="0.8128" layer="95" font="vector"/>
+<wire x1="53.34" y1="-109.22" x2="53.34" y2="-106.68" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="3"/>
+<wire x1="53.34" y1="-106.68" x2="63.5" y2="-106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="EXT_CON_3" class="0">
+<segment>
+<pinref part="OP1" gate="G$1" pin="5"/>
+<wire x1="40.64" y1="-114.3" x2="55.88" y2="-114.3" width="0.1524" layer="91"/>
+<label x="43.18" y="-114.3" size="0.8128" layer="95" font="vector"/>
+<wire x1="55.88" y1="-114.3" x2="55.88" y2="-109.22" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="4"/>
+<wire x1="55.88" y1="-109.22" x2="63.5" y2="-109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
