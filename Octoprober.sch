@@ -2623,6 +2623,21 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <vertex x="-2.1" y="-1.05"/>
 </polygon>
 </package>
+<package name="APA3010">
+<smd name="2" x="1.75" y="0" dx="1.5" dy="1.5" layer="1" rot="R180"/>
+<smd name="1" x="-1.75" y="0" dx="1.5" dy="1.5" layer="1" rot="R180"/>
+<smd name="3" x="0" y="-0.65" dx="0.9" dy="0.9" layer="1" rot="R270"/>
+<wire x1="3" y1="-1.5" x2="3" y2="1" width="0.127" layer="21"/>
+<wire x1="3" y1="1" x2="1" y2="1" width="0.127" layer="21"/>
+<wire x1="1" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
+<wire x1="-1" y1="1" x2="-3" y2="1" width="0.127" layer="21"/>
+<wire x1="-3" y1="1" x2="-3" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1.5" x2="3" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1" y1="1" x2="-1" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-1" y1="1.5" x2="1" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1" y1="1.5" x2="1" y2="1" width="0.127" layer="21"/>
+<text x="-3" y="-2.5" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LED_SINGLE">
@@ -2680,6 +2695,15 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <technology name=""/>
 </technologies>
 </device>
+<device name="APA3010" package="APA3010">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="2"/>
+<connect gate="G$1" pin="CATHODE" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -2687,11 +2711,11 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <library name="PP_Aesthetics">
 <packages>
 <package name="LHE_FRAME">
-<text x="0" y="5.08" size="0.8128" layer="21" font="vector">(c) 2014 Longhorn Engineer</text>
-<text x="0" y="3.81" size="0.8128" layer="21" font="vector">longhornengineer.com</text>
-<text x="0" y="2.54" size="0.8128" layer="21" font="vector">&gt;DRAWING_NAME</text>
-<text x="0" y="1.27" size="0.8128" layer="21" font="vector">&gt;REVNUM</text>
-<text x="0" y="0" size="0.8128" layer="21" font="vector">&gt;DNAME</text>
+<text x="0" y="5.08" size="0.8128" layer="21" font="vector" ratio="16">(c) 2014 Longhorn Engineer</text>
+<text x="0" y="3.81" size="0.8128" layer="21" font="vector" ratio="16">longhornengineer.com</text>
+<text x="0" y="2.54" size="0.8128" layer="21" font="vector" ratio="16">&gt;DRAWING_NAME</text>
+<text x="0" y="1.27" size="0.8128" layer="21" font="vector" ratio="16">&gt;REVNUM</text>
+<text x="0" y="0" size="0.8128" layer="21" font="vector" ratio="16">&gt;DNAME</text>
 </package>
 <package name="OCTOPROBER_LOGO">
 <rectangle x1="3.2131" y1="0.1905" x2="3.2893" y2="0.2159" layer="21"/>
@@ -13895,19 +13919,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
 <text x="2.286" y="0.127" size="0.8128" layer="25" font="vector">&gt;NAME</text>
 </package>
-<package name="TO-220AB">
-<pad name="S" x="-2.54" y="0" drill="0.8" diameter="1.6764" shape="long" rot="R90"/>
-<pad name="D" x="0" y="0" drill="0.8" diameter="1.6764" shape="long" rot="R90"/>
-<pad name="G" x="2.54" y="0" drill="0.8" diameter="1.6764" shape="long" rot="R90"/>
-<wire x1="-5.08" y1="2.032" x2="5.08" y2="2.032" width="0.127" layer="21"/>
-<wire x1="5.08" y1="2.032" x2="5.08" y2="-1.524" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-1.524" x2="5.08" y2="-2.794" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-2.794" x2="5.08" y2="-2.794" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="2.032" x2="-5.08" y2="-1.524" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-1.524" x2="-5.08" y2="-2.794" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-1.524" x2="5.08" y2="-1.524" width="0.127" layer="21"/>
-<text x="-5.08" y="2.54" size="0.8128" layer="21" font="vector">&gt;NAME</text>
-</package>
 <package name="TDSON-8">
 <smd name="4" x="3.45" y="2.175" dx="0.75" dy="1.1" layer="1" rot="R90"/>
 <smd name="3" x="3.45" y="0.905" dx="0.75" dy="1.1" layer="1" rot="R90"/>
@@ -14081,6 +14092,19 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <wire x1="-2.5" y1="1" x2="-2.5" y2="-1" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="-1" x2="-3.5" y2="-1" width="0.127" layer="21"/>
 <text x="-3.5" y="4.5" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+</package>
+<package name="TO-220AB">
+<pad name="S" x="-2.54" y="0" drill="1" diameter="1.6764" shape="long" rot="R90"/>
+<pad name="D" x="0" y="0" drill="1" diameter="1.6764" shape="long" rot="R90"/>
+<pad name="G" x="2.54" y="0" drill="1" diameter="1.6764" shape="long" rot="R90"/>
+<wire x1="-5.08" y1="2.032" x2="5.08" y2="2.032" width="0.127" layer="21"/>
+<wire x1="5.08" y1="2.032" x2="5.08" y2="-1.524" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-1.524" x2="5.08" y2="-2.794" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-2.794" x2="5.08" y2="-2.794" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="2.032" x2="-5.08" y2="-1.524" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-1.524" x2="-5.08" y2="-2.794" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-1.524" x2="5.08" y2="-1.524" width="0.127" layer="21"/>
+<text x="-5.08" y="2.54" size="0.8128" layer="21" font="vector">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
