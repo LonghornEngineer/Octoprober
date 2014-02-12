@@ -20,6 +20,11 @@ CON
         LCD_SDI   = 8
         LCD_CS    = 4
 
+        SD_DO     = 0
+        SD_SCLK   = 1
+        SD_DI     = 2
+        SD_CS     = 3
+
         SW_UP     = 22
         SW_SEL    = 23
         SW_DWN    = 24
@@ -53,6 +58,7 @@ OBJ
   I2C : "Basic_I2C_Driver_1"
   pst : "Parallax Serial Terminal"
   TC  : "jm_max31855"
+  SD  : "fsrw" 
   
 PUB main
   'Setup Soft Power Switch
@@ -78,8 +84,17 @@ PUB main
 
   LCD.MOVE(1,2) 
   LCD.STR(STRING("Hello World!"))
-   
 
+  SD.mount(0)
+
+  LCD.MOVE(1,2) 
+  LCD.STR(STRING("SD Card Mounted"))
+   
+  SD.popen(STRING("newtestfile.txt"), "w")
+
+  SD.sdstr(STRING("this string will be written to SDcard",13,10))
+
+  SD.pclose
 
   'Main Loop
   repeat
