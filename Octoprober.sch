@@ -1401,6 +1401,15 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 </polygon>
 <text x="-4" y="2" size="0.8128" layer="25" font="vector">&gt;NAME</text>
 </package>
+<package name="CDRH6D28">
+<smd name="P$1" x="-2.325" y="0" dx="2.65" dy="7.3" layer="1" rot="R180"/>
+<smd name="P$2" x="2.325" y="0" dx="2.65" dy="7.3" layer="1" rot="R180"/>
+<wire x1="-4" y1="4" x2="4" y2="4" width="0.127" layer="21"/>
+<wire x1="4" y1="4" x2="4" y2="-4" width="0.127" layer="21"/>
+<wire x1="4" y1="-4" x2="-4" y2="-4" width="0.127" layer="21"/>
+<wire x1="-4" y1="-4" x2="-4" y2="4" width="0.127" layer="21"/>
+<text x="-3.81" y="5.08" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -1775,6 +1784,15 @@ Description: USB Interface IC USB to Basic Serial UART IC SSOP-16</description>
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CDRH6D28" package="CDRH6D28">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2182,6 +2200,18 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <wire x1="7.5184" y1="3.8862" x2="-8.1534" y2="3.8862" width="0.127" layer="21"/>
 <circle x="-8.1534" y="5.0038" radius="1.27" width="0.127" layer="21"/>
 </package>
+<package name="B2B-XH-A">
+<pad name="1" x="-1.27" y="0" drill="1" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1" shape="long" rot="R90"/>
+<wire x1="-3.7" y1="2.35" x2="-3.7" y2="-3.4" width="0.127" layer="21"/>
+<wire x1="-3.7" y1="-3.4" x2="3.7" y2="-3.4" width="0.127" layer="21"/>
+<wire x1="3.7" y1="-3.4" x2="3.7" y2="2.35" width="0.127" layer="21"/>
+<wire x1="3.7" y1="2.35" x2="-3.7" y2="2.35" width="0.127" layer="21"/>
+<text x="-3.74" y="-4.445" size="0.8128" layer="21" font="vector">&gt;NAME</text>
+<wire x1="-1.2" y1="2.4" x2="-1.2" y2="3.2" width="0.127" layer="21"/>
+<wire x1="-1.2" y1="3.2" x2="1.2" y2="3.2" width="0.127" layer="21"/>
+<wire x1="1.2" y1="3.2" x2="1.2" y2="2.4" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SD_CARD">
@@ -2369,6 +2399,15 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </technologies>
 </device>
 <device name="SCREW_TERM" package="HEADER_01X02_PTH_SCREWTERM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="B2B-XH-A" package="B2B-XH-A">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -13728,10 +13767,10 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <wire x1="80" y1="-36" x2="80" y2="0" width="0.127" layer="21"/>
 <wire x1="80" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
 <text x="0" y="2.5" size="0.8128" layer="25" font="vector">&gt;NAME</text>
-<wire x1="4" y1="-4.8" x2="76" y2="-4.8" width="0" layer="20"/>
-<wire x1="76" y1="-4.8" x2="76" y2="-32" width="0" layer="20"/>
-<wire x1="76" y1="-32" x2="4" y2="-32" width="0" layer="20"/>
-<wire x1="4" y1="-32" x2="4" y2="-4.8" width="0" layer="20"/>
+<wire x1="1.46" y1="-4.8" x2="78.54" y2="-4.8" width="0" layer="20"/>
+<wire x1="78.54" y1="-4.8" x2="78.54" y2="-32" width="0" layer="20"/>
+<wire x1="78.54" y1="-32" x2="1.46" y2="-32" width="0" layer="20"/>
+<wire x1="1.46" y1="-32" x2="1.46" y2="-4.8" width="0" layer="20"/>
 </package>
 <package name="CHAR_DISPLAY_1602_4_HOLE">
 <pad name="1" x="8" y="-2.5" drill="1"/>
@@ -14360,7 +14399,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <part name="C14" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.1uF"/>
 <part name="U$1" library="PP_Aesthetics" deviceset="LHE_FRAME" device="">
 <attribute name="DNAME" value="Parker Dillmann"/>
-<attribute name="REVNUM" value="REV 1"/>
+<attribute name="REVNUM" value="REV 2"/>
 </part>
 <part name="LCD1" library="PP_Displays" deviceset="HD44780_LCD" device="1602_COUNTERSINK"/>
 <part name="U7" library="PP_Sensors" deviceset="MAX31855" device="SO-8" value="MAX31855KASA+"/>
