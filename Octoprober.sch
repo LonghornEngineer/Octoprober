@@ -13742,22 +13742,22 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <library name="PP_Displays">
 <packages>
 <package name="CHAR_DISPLAY_1602_COUNTERSINK">
-<pad name="1" x="8" y="-2.5" drill="1"/>
-<pad name="2" x="10.54" y="-2.5" drill="1"/>
-<pad name="3" x="13.08" y="-2.5" drill="1"/>
-<pad name="4" x="15.62" y="-2.5" drill="1"/>
-<pad name="5" x="18.16" y="-2.5" drill="1"/>
-<pad name="6" x="20.7" y="-2.5" drill="1"/>
-<pad name="7" x="23.24" y="-2.5" drill="1"/>
-<pad name="8" x="25.78" y="-2.5" drill="1"/>
-<pad name="9" x="28.32" y="-2.5" drill="1"/>
-<pad name="10" x="30.86" y="-2.5" drill="1"/>
-<pad name="11" x="33.4" y="-2.5" drill="1"/>
-<pad name="12" x="35.94" y="-2.5" drill="1"/>
-<pad name="13" x="38.48" y="-2.5" drill="1"/>
-<pad name="14" x="41.02" y="-2.5" drill="1"/>
-<pad name="15" x="43.56" y="-2.5" drill="1"/>
-<pad name="16" x="46.1" y="-2.5" drill="1"/>
+<pad name="1" x="8" y="-2" drill="1"/>
+<pad name="2" x="10.54" y="-2" drill="1"/>
+<pad name="3" x="13.08" y="-2" drill="1"/>
+<pad name="4" x="15.62" y="-2" drill="1"/>
+<pad name="5" x="18.16" y="-2" drill="1"/>
+<pad name="6" x="20.7" y="-2" drill="1"/>
+<pad name="7" x="23.24" y="-2" drill="1"/>
+<pad name="8" x="25.78" y="-2" drill="1"/>
+<pad name="9" x="28.32" y="-2" drill="1"/>
+<pad name="10" x="30.86" y="-2" drill="1"/>
+<pad name="11" x="33.4" y="-2" drill="1"/>
+<pad name="12" x="35.94" y="-2" drill="1"/>
+<pad name="13" x="38.48" y="-2" drill="1"/>
+<pad name="14" x="41.02" y="-2" drill="1"/>
+<pad name="15" x="43.56" y="-2" drill="1"/>
+<pad name="16" x="46.1" y="-2" drill="1"/>
 <hole x="2.5" y="-2.5" drill="2.8"/>
 <hole x="77.5" y="-2.5" drill="2.8"/>
 <hole x="77.5" y="-33.5" drill="2.8"/>
