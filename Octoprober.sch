@@ -14361,7 +14361,7 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </classes>
 <parts>
 <part name="U1" library="PP_DigitalIC" deviceset="P8X32A_PROPELLER" device="QFN-44" value="P8X32A-M44"/>
-<part name="X1" library="PP_FreqCtrl" deviceset="CRYSTAL" device="HC-49" value="ATS060CSM-1"/>
+<part name="X1" library="PP_FreqCtrl" deviceset="CRYSTAL" device="HC-49" value="ABLS3-6.000MHZ-D4Y-T"/>
 <part name="R1" library="PP_Passives" deviceset="RESISTOR" device="0402" value="10K"/>
 <part name="SD1" library="PP_Connectors" deviceset="SD_CARD" device="502570-0893" value="502570-0893"/>
 <part name="R2" library="PP_Passives" deviceset="RESISTOR" device="0402" value="10K"/>
