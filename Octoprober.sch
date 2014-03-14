@@ -176,62 +176,62 @@
 <text x="-7" y="8" size="0.8128" layer="25" font="vector">&gt;NAME</text>
 </package>
 <package name="QFN-44">
-<smd name="1" x="-4.3" y="3.25" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="2" x="-4.3" y="2.6" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="3" x="-4.3" y="1.95" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="4" x="-4.3" y="1.3" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="5" x="-4.3" y="0.65" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="6" x="-4.3" y="0" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="7" x="-4.3" y="-0.65" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="8" x="-4.3" y="-1.3" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="9" x="-4.3" y="-1.95" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="10" x="-4.3" y="-2.6" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="11" x="-4.3" y="-3.25" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="12" x="-3.25" y="-4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="13" x="-2.6" y="-4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="14" x="-1.95" y="-4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="15" x="-1.3" y="-4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="16" x="-0.65" y="-4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="17" x="0" y="-4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="18" x="0.65" y="-4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="19" x="1.3" y="-4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="20" x="1.95" y="-4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="21" x="2.6" y="-4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="22" x="3.25" y="-4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="33" x="4.3" y="3.25" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="32" x="4.3" y="2.6" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="31" x="4.3" y="1.95" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="30" x="4.3" y="1.3" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="29" x="4.3" y="0.65" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="28" x="4.3" y="0" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="27" x="4.3" y="-0.65" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="26" x="4.3" y="-1.3" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="25" x="4.3" y="-1.95" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="24" x="4.3" y="-2.6" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="23" x="4.3" y="-3.25" dx="0.33" dy="0.6" layer="1" roundness="50" rot="R270"/>
-<smd name="44" x="-3.25" y="4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="43" x="-2.6" y="4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="42" x="-1.95" y="4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="41" x="-1.3" y="4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="40" x="-0.65" y="4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="39" x="0" y="4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="38" x="0.65" y="4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="37" x="1.3" y="4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="36" x="1.95" y="4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="35" x="2.6" y="4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
-<smd name="34" x="3.25" y="4.3" dx="0.33" dy="0.6" layer="1" roundness="50"/>
+<smd name="1" x="-4.5" y="3.25" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="2" x="-4.5" y="2.6" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="3" x="-4.5" y="1.95" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="4" x="-4.5" y="1.3" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="5" x="-4.5" y="0.65" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="6" x="-4.5" y="0" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="7" x="-4.5" y="-0.65" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="8" x="-4.5" y="-1.3" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="9" x="-4.5" y="-1.95" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="10" x="-4.5" y="-2.6" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="11" x="-4.5" y="-3.25" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="12" x="-3.25" y="-4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="13" x="-2.6" y="-4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="14" x="-1.95" y="-4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="15" x="-1.3" y="-4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="16" x="-0.65" y="-4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="17" x="0" y="-4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="18" x="0.65" y="-4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="19" x="1.3" y="-4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="20" x="1.95" y="-4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="21" x="2.6" y="-4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="22" x="3.25" y="-4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="33" x="4.5" y="3.25" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="32" x="4.5" y="2.6" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="31" x="4.5" y="1.95" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="30" x="4.5" y="1.3" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="29" x="4.5" y="0.65" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="28" x="4.5" y="0" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="27" x="4.5" y="-0.65" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="26" x="4.5" y="-1.3" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="25" x="4.5" y="-1.95" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="24" x="4.5" y="-2.6" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="23" x="4.5" y="-3.25" dx="0.33" dy="1" layer="1" roundness="50" rot="R270"/>
+<smd name="44" x="-3.25" y="4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="43" x="-2.6" y="4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="42" x="-1.95" y="4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="41" x="-1.3" y="4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="40" x="-0.65" y="4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="39" x="0" y="4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="38" x="0.65" y="4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="37" x="1.3" y="4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="36" x="1.95" y="4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="35" x="2.6" y="4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
+<smd name="34" x="3.25" y="4.5" dx="0.33" dy="1" layer="1" roundness="50"/>
 <smd name="PAD" x="0" y="0" dx="7.5" dy="7.5" layer="1" roundness="10"/>
-<wire x1="-4.75" y1="4.75" x2="4.75" y2="4.75" width="0.127" layer="21"/>
-<wire x1="4.75" y1="4.75" x2="4.75" y2="-4.75" width="0.127" layer="21"/>
-<wire x1="4.75" y1="-4.75" x2="-4.75" y2="-4.75" width="0.127" layer="21"/>
-<wire x1="-4.75" y1="-4.75" x2="-4.75" y2="4.75" width="0.127" layer="21"/>
+<wire x1="-5.15" y1="5.15" x2="5.15" y2="5.15" width="0.127" layer="21"/>
+<wire x1="5.15" y1="5.15" x2="5.15" y2="-5.15" width="0.127" layer="21"/>
+<wire x1="5.15" y1="-5.15" x2="-5.15" y2="-5.15" width="0.127" layer="21"/>
+<wire x1="-5.15" y1="-5.15" x2="-5.15" y2="5.15" width="0.127" layer="21"/>
 <polygon width="0.127" layer="21">
-<vertex x="-4" y="4.75"/>
+<vertex x="-4" y="5.15"/>
 <vertex x="-4" y="4"/>
-<vertex x="-4.75" y="4"/>
-<vertex x="-4.75" y="4.75"/>
+<vertex x="-5.15" y="4"/>
+<vertex x="-5.15" y="5.15"/>
 </polygon>
-<text x="-4.75" y="5" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="-5.15" y="5.4" size="0.8128" layer="25" font="vector">&gt;NAME</text>
 </package>
 <package name="SOIC-8">
 <smd name="7" x="-0.635" y="2.55" dx="0.5" dy="2" layer="1"/>
@@ -14843,6 +14843,8 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <part name="C50" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.1uF"/>
 <part name="C51" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.1uF"/>
 <part name="C52" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.1uF"/>
+<part name="C53" library="PP_Passives" deviceset="CAPACITOR_POLARIZED" device="CASE_D" value="470uF"/>
+<part name="C54" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -14991,11 +14993,11 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <instance part="C17" gate="G$1" x="-337.82" y="-17.78"/>
 <instance part="C19" gate="G$1" x="-182.88" y="-17.78"/>
 <instance part="C21" gate="G$1" x="-190.5" y="-17.78"/>
-<instance part="C23" gate="G$1" x="-195.58" y="-66.04"/>
-<instance part="C25" gate="G$1" x="-175.26" y="-66.04"/>
-<instance part="C27" gate="G$1" x="-210.82" y="-66.04"/>
-<instance part="R35" gate="G$1" x="-203.2" y="-60.96"/>
-<instance part="L18" gate="G$1" x="-185.42" y="-60.96"/>
+<instance part="C23" gate="G$1" x="-190.5" y="-88.9"/>
+<instance part="C25" gate="G$1" x="-170.18" y="-88.9"/>
+<instance part="C27" gate="G$1" x="-205.74" y="-88.9"/>
+<instance part="R35" gate="G$1" x="-198.12" y="-83.82"/>
+<instance part="L18" gate="G$1" x="-180.34" y="-83.82"/>
 <instance part="U13" gate="G$1" x="-469.9" y="10.16"/>
 <instance part="U14" gate="G$1" x="-469.9" y="-15.24"/>
 <instance part="U15" gate="G$1" x="-469.9" y="-43.18"/>
@@ -15012,6 +15014,8 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <instance part="C50" gate="G$1" x="-317.5" y="-2.54" rot="R90"/>
 <instance part="C51" gate="G$1" x="-317.5" y="-27.94" rot="R90"/>
 <instance part="C52" gate="G$1" x="-317.5" y="-53.34" rot="R90"/>
+<instance part="C53" gate="G$1" x="-162.56" y="-88.9"/>
+<instance part="C54" gate="G$1" x="-152.4" y="27.94"/>
 </instances>
 <busses>
 </busses>
@@ -15427,6 +15431,10 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <pinref part="LCD1" gate="G$1" pin="VSS"/>
 <wire x1="-139.7" y1="30.48" x2="-147.32" y2="30.48" width="0.1524" layer="91"/>
 <label x="-147.32" y="30.48" size="0.8128" layer="95" font="vector"/>
+<wire x1="-147.32" y1="30.48" x2="-147.32" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="33.02" x2="-152.4" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="C54" gate="G$1" pin="1"/>
+<wire x1="-152.4" y1="33.02" x2="-152.4" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R34" gate="G$1" pin="1"/>
@@ -15485,15 +15493,19 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </segment>
 <segment>
 <pinref part="C27" gate="G$1" pin="2"/>
-<wire x1="-210.82" y1="-71.12" x2="-210.82" y2="-73.66" width="0.1524" layer="91"/>
+<wire x1="-205.74" y1="-93.98" x2="-205.74" y2="-96.52" width="0.1524" layer="91"/>
 <pinref part="C25" gate="G$1" pin="2"/>
-<wire x1="-210.82" y1="-73.66" x2="-195.58" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="-195.58" y1="-73.66" x2="-175.26" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="-175.26" y1="-73.66" x2="-175.26" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="-205.74" y1="-96.52" x2="-190.5" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="-190.5" y1="-96.52" x2="-170.18" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="-170.18" y1="-96.52" x2="-170.18" y2="-93.98" width="0.1524" layer="91"/>
 <pinref part="C23" gate="G$1" pin="2"/>
-<wire x1="-195.58" y1="-71.12" x2="-195.58" y2="-73.66" width="0.1524" layer="91"/>
-<junction x="-195.58" y="-73.66"/>
-<label x="-185.42" y="-73.66" size="0.8128" layer="95" font="vector"/>
+<wire x1="-190.5" y1="-93.98" x2="-190.5" y2="-96.52" width="0.1524" layer="91"/>
+<junction x="-190.5" y="-96.52"/>
+<label x="-180.34" y="-96.52" size="0.8128" layer="95" font="vector"/>
+<pinref part="C53" gate="G$1" pin="NEG"/>
+<wire x1="-170.18" y1="-96.52" x2="-162.56" y2="-96.52" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="-96.52" x2="-162.56" y2="-93.98" width="0.1524" layer="91"/>
+<junction x="-170.18" y="-96.52"/>
 </segment>
 <segment>
 <pinref part="U13" gate="G$1" pin="GND"/>
@@ -15790,6 +15802,10 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <pinref part="LCD1" gate="G$1" pin="VCC"/>
 <wire x1="-139.7" y1="27.94" x2="-147.32" y2="27.94" width="0.1524" layer="91"/>
 <label x="-147.32" y="27.94" size="0.8128" layer="95" font="vector"/>
+<wire x1="-147.32" y1="27.94" x2="-147.32" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="20.32" x2="-152.4" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="C54" gate="G$1" pin="2"/>
+<wire x1="-152.4" y1="20.32" x2="-152.4" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R31" gate="G$1" pin="1"/>
@@ -15824,11 +15840,16 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <segment>
 <pinref part="C25" gate="G$1" pin="1"/>
 <pinref part="L18" gate="G$1" pin="P$2"/>
-<wire x1="-175.26" y1="-63.5" x2="-175.26" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="-175.26" y1="-60.96" x2="-177.8" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="-175.26" y1="-60.96" x2="-170.18" y2="-60.96" width="0.1524" layer="91"/>
-<junction x="-175.26" y="-60.96"/>
-<label x="-172.72" y="-60.96" size="0.8128" layer="95" font="vector"/>
+<wire x1="-170.18" y1="-86.36" x2="-170.18" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="-170.18" y1="-83.82" x2="-172.72" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="-170.18" y1="-83.82" x2="-165.1" y2="-83.82" width="0.1524" layer="91"/>
+<junction x="-170.18" y="-83.82"/>
+<label x="-160.02" y="-83.82" size="0.8128" layer="95" font="vector"/>
+<wire x1="-165.1" y1="-83.82" x2="-162.56" y2="-83.82" width="0.1524" layer="91"/>
+<pinref part="C53" gate="G$1" pin="POS"/>
+<wire x1="-162.56" y1="-83.82" x2="-157.48" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="-162.56" y1="-83.82" x2="-162.56" y2="-86.36" width="0.1524" layer="91"/>
+<junction x="-162.56" y="-83.82"/>
 </segment>
 </net>
 <net name="SD_RW" class="0">
@@ -16882,12 +16903,12 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </segment>
 <segment>
 <pinref part="C27" gate="G$1" pin="1"/>
-<wire x1="-210.82" y1="-63.5" x2="-210.82" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="-205.74" y1="-86.36" x2="-205.74" y2="-83.82" width="0.1524" layer="91"/>
 <pinref part="R35" gate="G$1" pin="1"/>
-<wire x1="-210.82" y1="-60.96" x2="-208.28" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="-210.82" y1="-60.96" x2="-215.9" y2="-60.96" width="0.1524" layer="91"/>
-<junction x="-210.82" y="-60.96"/>
-<label x="-215.9" y="-60.96" size="0.8128" layer="95" font="vector"/>
+<wire x1="-205.74" y1="-83.82" x2="-203.2" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="-205.74" y1="-83.82" x2="-210.82" y2="-83.82" width="0.1524" layer="91"/>
+<junction x="-205.74" y="-83.82"/>
+<label x="-210.82" y="-83.82" size="0.8128" layer="95" font="vector"/>
 </segment>
 <segment>
 <pinref part="U13" gate="G$1" pin="VCC"/>
@@ -17263,11 +17284,11 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <segment>
 <pinref part="R35" gate="G$1" pin="2"/>
 <pinref part="C23" gate="G$1" pin="1"/>
-<wire x1="-198.12" y1="-60.96" x2="-195.58" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="-195.58" y1="-60.96" x2="-195.58" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="-193.04" y1="-83.82" x2="-190.5" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="-190.5" y1="-83.82" x2="-190.5" y2="-86.36" width="0.1524" layer="91"/>
 <pinref part="L18" gate="G$1" pin="P$1"/>
-<wire x1="-195.58" y1="-60.96" x2="-193.04" y2="-60.96" width="0.1524" layer="91"/>
-<junction x="-195.58" y="-60.96"/>
+<wire x1="-190.5" y1="-83.82" x2="-187.96" y2="-83.82" width="0.1524" layer="91"/>
+<junction x="-190.5" y="-83.82"/>
 </segment>
 </net>
 </nets>
