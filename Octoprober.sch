@@ -14845,6 +14845,10 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <part name="C52" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.1uF"/>
 <part name="C53" library="PP_Passives" deviceset="CAPACITOR_POLARIZED" device="CASE_D" value="470uF"/>
 <part name="C54" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="1uF"/>
+<part name="U21" library="PP_DiscreteSemi" deviceset="MOSFET_N-CHANNEL_SINGLE" device="SOT-23" value="PMV22EN,215"/>
+<part name="R36" library="PP_Passives" deviceset="RESISTOR" device="0402" value="10K"/>
+<part name="R37" library="PP_Passives" deviceset="RESISTOR" device="0402" value="560"/>
+<part name="R38" library="PP_Passives" deviceset="RESISTOR" device="0402" value="560"/>
 </parts>
 <sheets>
 <sheet>
@@ -15016,6 +15020,10 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <instance part="C52" gate="G$1" x="-317.5" y="-53.34" rot="R90"/>
 <instance part="C53" gate="G$1" x="-162.56" y="-88.9"/>
 <instance part="C54" gate="G$1" x="-152.4" y="27.94"/>
+<instance part="U21" gate="G$1" x="-15.24" y="-127"/>
+<instance part="R36" gate="G$1" x="-30.48" y="-119.38" rot="R90"/>
+<instance part="R37" gate="G$1" x="-22.86" y="-111.76" rot="R180"/>
+<instance part="R38" gate="G$1" x="-40.64" y="-127" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -15631,6 +15639,14 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <wire x1="-320.04" y1="-53.34" x2="-335.28" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="-335.28" y1="-53.34" x2="-335.28" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U21" gate="G$1" pin="SOURCE"/>
+<wire x1="-15.24" y1="-134.62" x2="-15.24" y2="-137.16" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="-137.16" x2="-40.64" y2="-137.16" width="0.1524" layer="91"/>
+<pinref part="R38" gate="G$1" pin="2"/>
+<wire x1="-40.64" y1="-137.16" x2="-40.64" y2="-132.08" width="0.1524" layer="91"/>
+<label x="-35.56" y="-137.16" size="0.8128" layer="95" font="vector"/>
+</segment>
 </net>
 <net name="RES" class="0">
 <segment>
@@ -15851,6 +15867,18 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <wire x1="-162.56" y1="-83.82" x2="-162.56" y2="-86.36" width="0.1524" layer="91"/>
 <junction x="-162.56" y="-83.82"/>
 </segment>
+<segment>
+<pinref part="R37" gate="G$1" pin="2"/>
+<wire x1="-27.94" y1="-111.76" x2="-30.48" y2="-111.76" width="0.1524" layer="91"/>
+<pinref part="R38" gate="G$1" pin="1"/>
+<wire x1="-30.48" y1="-111.76" x2="-33.02" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="-111.76" x2="-40.64" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="-111.76" x2="-40.64" y2="-121.92" width="0.1524" layer="91"/>
+<pinref part="R36" gate="G$1" pin="2"/>
+<wire x1="-30.48" y1="-114.3" x2="-30.48" y2="-111.76" width="0.1524" layer="91"/>
+<junction x="-30.48" y="-111.76"/>
+<label x="-35.56" y="-111.76" size="0.8128" layer="95" font="vector"/>
+</segment>
 </net>
 <net name="SD_RW" class="0">
 <segment>
@@ -16065,13 +16093,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <wire x1="-378.46" y1="15.24" x2="-378.46" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="U11" gate="G$1" pin="CH1-"/>
 <wire x1="-378.46" y1="-22.86" x2="-375.92" y2="-22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="P11" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="P11"/>
-<wire x1="-12.7" y1="-5.08" x2="-22.86" y2="-5.08" width="0.1524" layer="91"/>
-<label x="-22.86" y="-5.08" size="0.8128" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="TP_T-_1" class="0">
@@ -17289,6 +17310,30 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <pinref part="L18" gate="G$1" pin="P$1"/>
 <wire x1="-190.5" y1="-83.82" x2="-187.96" y2="-83.82" width="0.1524" layer="91"/>
 <junction x="-190.5" y="-83.82"/>
+</segment>
+</net>
+<net name="SHT_DRAIN" class="0">
+<segment>
+<pinref part="U21" gate="G$1" pin="GATE"/>
+<wire x1="-25.4" y1="-127" x2="-30.48" y2="-127" width="0.1524" layer="91"/>
+<label x="-35.56" y="-127" size="0.8128" layer="95" font="vector"/>
+<wire x1="-30.48" y1="-127" x2="-35.56" y2="-127" width="0.1524" layer="91"/>
+<junction x="-30.48" y="-127"/>
+<pinref part="R36" gate="G$1" pin="1"/>
+<wire x1="-30.48" y1="-127" x2="-30.48" y2="-124.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="P11"/>
+<wire x1="-12.7" y1="-5.08" x2="-22.86" y2="-5.08" width="0.1524" layer="91"/>
+<label x="-22.86" y="-5.08" size="0.8128" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="R37" gate="G$1" pin="1"/>
+<pinref part="U21" gate="G$1" pin="DRAIN"/>
+<wire x1="-17.78" y1="-111.76" x2="-15.24" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="-111.76" x2="-15.24" y2="-119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
