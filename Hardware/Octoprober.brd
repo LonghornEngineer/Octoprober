@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.254" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.0635" altunitdist="mm" altunit="mm"/>
+<grid distance="0.254" unitdist="mm" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0635" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="1" visible="yes" active="yes"/>
@@ -361,16 +361,6 @@
 </library>
 <library name="PP_Connectors">
 <packages>
-<package name="HEADER_01X02_PTH_SCREWTERM">
-<pad name="1" x="0" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="1" shape="long" rot="R90"/>
-<wire x1="-1.5" y1="3.2" x2="-1.5" y2="-3.25" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-3.25" x2="4.04" y2="-3.25" width="0.127" layer="21"/>
-<wire x1="4.04" y1="-3.25" x2="4.04" y2="3.2" width="0.127" layer="21"/>
-<wire x1="4.04" y1="3.2" x2="-1.5" y2="3.2" width="0.127" layer="21"/>
-<text x="-1.27" y="-4.21" size="0.8128" layer="21" font="vector">&gt;NAME</text>
-<rectangle x1="-1.4478" y1="2.5146" x2="-0.8128" y2="3.1496" layer="21"/>
-</package>
 <package name="HEADER_01X02_PTH">
 <description>2 Pin 100 mill header</description>
 <pad name="1" x="0" y="0" drill="0.8" shape="long" rot="R90"/>
@@ -405,6 +395,20 @@
 <wire x1="8.89" y1="1.905" x2="-1.27" y2="1.905" width="0.127" layer="21"/>
 <rectangle x1="-1.27" y1="1.27" x2="-0.635" y2="1.905" layer="21"/>
 <pad name="4" x="7.62" y="0" drill="0.8" shape="long" rot="R90"/>
+</package>
+<package name="PCC-SMP-V">
+<pad name="POS" x="-8.255" y="-1.524" drill="1.778" shape="square"/>
+<pad name="NEG" x="-1.905" y="-1.524" drill="1.778" shape="square"/>
+<pad name="M2" x="-20.955" y="-3.2258" drill="1.778" shape="square"/>
+<pad name="M1" x="-20.955" y="3.6322" drill="1.778" shape="square"/>
+<wire x1="0" y1="3.175" x2="0" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="0" y1="-3.175" x2="-9.906" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="-9.906" y1="-3.175" x2="-25.908" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="-25.908" y1="-3.175" x2="-25.908" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-25.908" y1="3.175" x2="-9.906" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-9.906" y1="3.175" x2="0" y2="3.175" width="0.127" layer="21"/>
+<wire x1="-9.906" y1="-3.175" x2="-9.906" y2="3.175" width="0.127" layer="21"/>
+<text x="-0.635" y="2.54" size="1.016" layer="25" font="vector" ratio="16" align="top-right">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -6513,9 +6517,6 @@ design rules under a new name.</description>
 <element name="R28" library="PP_Passives" package="0603" value="120" x="102.108" y="25.876" smashed="yes" rot="R270">
 <attribute name="NAME" x="102.905" y="26.5745" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="TC1" library="PP_Connectors" package="HEADER_01X02_PTH_SCREWTERM" value="282834-2" x="84.328" y="92.932" smashed="yes" rot="R180">
-<attribute name="NAME" x="86.106" y="93.802" size="0.8128" layer="21" font="vector" ratio="16"/>
-</element>
 <element name="U10" library="PP_DigitalIC" package="SOIC-8" value="DS1340Z-33+" x="89.408" y="23.336" smashed="yes" rot="R270">
 <attribute name="NAME" x="85.384" y="19.708" size="0.8128" layer="21" font="vector" ratio="16"/>
 </element>
@@ -6611,7 +6612,6 @@ design rules under a new name.</description>
 <element name="C18" library="PP_Passives" package="0402" value="0.1uF" x="1.524" y="-14.732"/>
 <element name="C19" library="PP_Passives" package="0402" value="0.1uF" x="1.524" y="-17.78"/>
 <element name="C20" library="PP_Passives" package="0402" value="0.1uF" x="7.62" y="-35.306"/>
-<element name="TC2" library="PP_Connectors" package="HEADER_01X02_PTH_SCREWTERM" value="282834-2" x="1.27" y="-22.098"/>
 <element name="D5" library="PP_Passives" package="SOT-23" value="NUP2105LT1G" x="1.524" y="-35.814"/>
 <element name="U12" library="PP_AnalogIC" package="TTSOP-14" value="MAX31856MUD+" x="4.064" y="-30.734"/>
 <element name="C21" library="PP_Passives" package="0402" value="0.01uF" x="11.176" y="-35.306"/>
@@ -6619,7 +6619,6 @@ design rules under a new name.</description>
 <element name="C24" library="PP_Passives" package="0402" value="0.1uF" x="5.08" y="-40.132"/>
 <element name="C26" library="PP_Passives" package="0402" value="0.1uF" x="8.636" y="-40.132"/>
 <element name="C28" library="PP_Passives" package="0402" value="0.1uF" x="7.62" y="-57.658"/>
-<element name="TC3" library="PP_Connectors" package="HEADER_01X02_PTH_SCREWTERM" value="282834-2" x="1.27" y="-44.45"/>
 <element name="D6" library="PP_Passives" package="SOT-23" value="NUP2105LT1G" x="1.524" y="-58.166"/>
 <element name="U13" library="PP_AnalogIC" package="TTSOP-14" value="MAX31856MUD+" x="4.064" y="-53.086"/>
 <element name="C29" library="PP_Passives" package="0402" value="0.01uF" x="11.176" y="-57.658"/>
@@ -6627,7 +6626,6 @@ design rules under a new name.</description>
 <element name="C46" library="PP_Passives" package="0402" value="0.1uF" x="5.08" y="-62.484"/>
 <element name="C47" library="PP_Passives" package="0402" value="0.1uF" x="8.636" y="-62.484"/>
 <element name="C48" library="PP_Passives" package="0402" value="0.1uF" x="7.62" y="-80.01"/>
-<element name="TC4" library="PP_Connectors" package="HEADER_01X02_PTH_SCREWTERM" value="282834-2" x="1.27" y="-66.802"/>
 <element name="D7" library="PP_Passives" package="SOT-23" value="NUP2105LT1G" x="1.524" y="-80.518"/>
 <element name="U14" library="PP_AnalogIC" package="TTSOP-14" value="MAX31856MUD+" x="4.064" y="-75.438"/>
 <element name="C49" library="PP_Passives" package="0402" value="0.01uF" x="11.176" y="-80.01"/>
@@ -6635,7 +6633,6 @@ design rules under a new name.</description>
 <element name="C51" library="PP_Passives" package="0402" value="0.1uF" x="5.08" y="-84.836"/>
 <element name="C52" library="PP_Passives" package="0402" value="0.1uF" x="8.636" y="-84.836"/>
 <element name="C55" library="PP_Passives" package="0402" value="0.1uF" x="13.716" y="-108.966"/>
-<element name="TC5" library="PP_Connectors" package="HEADER_01X02_PTH_SCREWTERM" value="282834-2" x="1.27" y="-89.154"/>
 <element name="D8" library="PP_Passives" package="SOT-23" value="NUP2105LT1G" x="1.524" y="-109.474"/>
 <element name="U15" library="PP_AnalogIC" package="TTSOP-14" value="MAX31856MUD+" x="4.064" y="-97.79"/>
 <element name="C56" library="PP_Passives" package="0402" value="0.01uF" x="17.272" y="-108.966"/>
@@ -6643,7 +6640,6 @@ design rules under a new name.</description>
 <element name="C58" library="PP_Passives" package="0402" value="0.1uF" x="24.384" y="-108.966"/>
 <element name="C59" library="PP_Passives" package="0402" value="0.1uF" x="1.524" y="-113.792"/>
 <element name="C60" library="PP_Passives" package="0402" value="0.1uF" x="5.08" y="-113.792"/>
-<element name="TC6" library="PP_Connectors" package="HEADER_01X02_PTH_SCREWTERM" value="282834-2" x="7.366" y="-89.154"/>
 <element name="D9" library="PP_Passives" package="SOT-23" value="NUP2105LT1G" x="7.62" y="-109.474"/>
 <element name="U16" library="PP_AnalogIC" package="TTSOP-14" value="MAX31856MUD+" x="12.446" y="-97.79"/>
 <element name="C61" library="PP_Passives" package="0402" value="0.01uF" x="8.636" y="-113.792"/>
@@ -6651,7 +6647,6 @@ design rules under a new name.</description>
 <element name="C63" library="PP_Passives" package="0402" value="0.1uF" x="15.748" y="-113.792"/>
 <element name="C64" library="PP_Passives" package="0402" value="0.1uF" x="19.304" y="-113.792"/>
 <element name="C65" library="PP_Passives" package="0402" value="0.1uF" x="22.86" y="-113.792"/>
-<element name="TC7" library="PP_Connectors" package="HEADER_01X02_PTH_SCREWTERM" value="282834-2" x="13.462" y="-89.154"/>
 <element name="D10" library="PP_Passives" package="SOT-23" value="NUP2105LT1G" x="9.906" y="-102.87"/>
 <element name="U17" library="PP_AnalogIC" package="TTSOP-14" value="MAX31856MUD+" x="20.828" y="-97.79"/>
 <element name="C66" library="PP_Passives" package="0402" value="0.01uF" x="1.524" y="-116.84"/>
@@ -6659,7 +6654,6 @@ design rules under a new name.</description>
 <element name="C68" library="PP_Passives" package="0402" value="0.1uF" x="8.636" y="-116.84"/>
 <element name="C69" library="PP_Passives" package="0402" value="0.1uF" x="12.192" y="-116.84"/>
 <element name="C70" library="PP_Passives" package="0402" value="0.1uF" x="15.748" y="-116.84"/>
-<element name="TC8" library="PP_Connectors" package="HEADER_01X02_PTH_SCREWTERM" value="282834-2" x="19.558" y="-89.154"/>
 <element name="D11" library="PP_Passives" package="SOT-23" value="NUP2105LT1G" x="16.764" y="-102.87"/>
 <element name="U18" library="PP_AnalogIC" package="TTSOP-14" value="MAX31856MUD+" x="4.064" y="-104.394"/>
 <element name="C71" library="PP_Passives" package="0402" value="0.01uF" x="19.304" y="-116.84"/>
@@ -6673,6 +6667,14 @@ design rules under a new name.</description>
 <element name="FID1" library="MF_Aesthetics" package="GSM_FIDUCIAL" value="GSM_FIDUCIAL" x="1.27" y="-161.29"/>
 <element name="U$7" library="PP_Aesthetics" package="MF_LOGO_MEDIUM" value="MF_LOGOLOGO_MEDIUM" x="122.428" y="71.374"/>
 <element name="U1" library="MF_IC_Digital" package="LQFP44" value="P8X32A-Q44" x="-7.874" y="-155.194"/>
+<element name="T1" library="PP_Connectors" package="PCC-SMP-V" value="PCC-SMP-V" x="10.414" y="-167.64"/>
+<element name="T2" library="PP_Connectors" package="PCC-SMP-V" value="PCC-SMP-V" x="10.414" y="-177.292"/>
+<element name="T3" library="PP_Connectors" package="PCC-SMP-V" value="PCC-SMP-V" x="10.414" y="-186.944"/>
+<element name="T4" library="PP_Connectors" package="PCC-SMP-V" value="PCC-SMP-V" x="10.414" y="-196.596"/>
+<element name="T5" library="PP_Connectors" package="PCC-SMP-V" value="PCC-SMP-V" x="10.414" y="-206.248"/>
+<element name="T6" library="PP_Connectors" package="PCC-SMP-V" value="PCC-SMP-V" x="10.414" y="-215.9"/>
+<element name="T7" library="PP_Connectors" package="PCC-SMP-V" value="PCC-SMP-V" x="10.414" y="-225.552"/>
+<element name="T8" library="PP_Connectors" package="PCC-SMP-V" value="PCC-SMP-V" x="10.414" y="-235.204"/>
 </elements>
 <signals>
 <signal name="X0">
@@ -7231,16 +7233,16 @@ design rules under a new name.</description>
 </signal>
 <signal name="TP_T-_0">
 <contactref element="C16" pad="1"/>
-<contactref element="TC1" pad="2"/>
 <contactref element="D4" pad="2"/>
 <contactref element="U11" pad="P$3"/>
 <contactref element="C15" pad="1"/>
 <contactref element="U11" pad="P$2"/>
-<wire x1="82.108" y1="84.698" x2="81.788" y2="92.932" width="0" layer="19" extent="1-1"/>
+<contactref element="T1" pad="NEG"/>
 <wire x1="82.408" y1="80.74" x2="82.108" y2="84.698" width="0" layer="19" extent="1-1"/>
 <wire x1="1.189" y1="-2.764" x2="82.408" y2="80.74" width="0" layer="19" extent="1-1"/>
 <wire x1="1.189" y1="-3.414" x2="1.189" y2="-2.764" width="0" layer="19" extent="1-1"/>
 <wire x1="0.874" y1="-8.636" x2="1.189" y2="-3.414" width="0" layer="19" extent="1-1"/>
+<wire x1="8.509" y1="-169.164" x2="0.874" y2="-8.636" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SYS_V">
 <contactref element="U5" pad="10"/>
@@ -7536,14 +7538,14 @@ design rules under a new name.</description>
 </signal>
 <signal name="TP_T+_0">
 <contactref element="C16" pad="2"/>
-<contactref element="TC1" pad="1"/>
 <contactref element="D4" pad="1"/>
 <contactref element="U11" pad="P$4"/>
 <contactref element="C17" pad="1"/>
-<wire x1="84.008" y1="84.698" x2="84.328" y2="92.932" width="0" layer="19" extent="1-1"/>
+<contactref element="T1" pad="POS"/>
 <wire x1="83.708" y1="80.74" x2="84.008" y2="84.698" width="0" layer="19" extent="1-1"/>
 <wire x1="1.189" y1="-4.064" x2="83.708" y2="80.74" width="0" layer="19" extent="1-1"/>
 <wire x1="0.874" y1="-11.684" x2="1.189" y2="-4.064" width="0" layer="19" extent="1-1"/>
+<wire x1="2.159" y1="-169.164" x2="0.874" y2="-11.684" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$25">
 <contactref element="R35" pad="2"/>
@@ -7616,27 +7618,27 @@ design rules under a new name.</description>
 </signal>
 <signal name="TP_T-_1">
 <contactref element="C20" pad="1"/>
-<contactref element="TC2" pad="2"/>
 <contactref element="D5" pad="2"/>
 <contactref element="U12" pad="P$3"/>
 <contactref element="C21" pad="1"/>
 <contactref element="U12" pad="P$2"/>
+<contactref element="T2" pad="NEG"/>
+<wire x1="2.474" y1="-36.914" x2="8.509" y2="-178.816" width="0" layer="19" extent="1-1"/>
 <wire x1="6.97" y1="-35.306" x2="2.474" y2="-36.914" width="0" layer="19" extent="1-1"/>
 <wire x1="10.526" y1="-35.306" x2="6.97" y2="-35.306" width="0" layer="19" extent="1-1"/>
 <wire x1="1.189" y1="-30.084" x2="2.474" y2="-36.914" width="0" layer="19" extent="1-1"/>
 <wire x1="1.189" y1="-29.434" x2="1.189" y2="-30.084" width="0" layer="19" extent="1-1"/>
-<wire x1="3.81" y1="-22.098" x2="1.189" y2="-29.434" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TP_T+_1">
 <contactref element="C20" pad="2"/>
-<contactref element="TC2" pad="1"/>
 <contactref element="D5" pad="1"/>
 <contactref element="U12" pad="P$4"/>
 <contactref element="C22" pad="1"/>
+<contactref element="T2" pad="POS"/>
+<wire x1="0.874" y1="-40.132" x2="2.159" y2="-178.816" width="0" layer="19" extent="1-1"/>
 <wire x1="0.574" y1="-36.914" x2="0.874" y2="-40.132" width="0" layer="19" extent="1-1"/>
 <wire x1="1.189" y1="-30.734" x2="0.574" y2="-36.914" width="0" layer="19" extent="1-1"/>
 <wire x1="8.27" y1="-35.306" x2="0.574" y2="-36.914" width="0" layer="19" extent="1-1"/>
-<wire x1="1.27" y1="-22.098" x2="1.189" y2="-30.734" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_1_!CS">
 <contactref element="U12" pad="P$9"/>
@@ -7650,51 +7652,51 @@ design rules under a new name.</description>
 </signal>
 <signal name="TP_T-_2">
 <contactref element="C28" pad="1"/>
-<contactref element="TC3" pad="2"/>
 <contactref element="D6" pad="2"/>
 <contactref element="U13" pad="P$3"/>
 <contactref element="C29" pad="1"/>
 <contactref element="U13" pad="P$2"/>
+<contactref element="T3" pad="NEG"/>
+<wire x1="2.474" y1="-59.266" x2="8.509" y2="-188.468" width="0" layer="19" extent="1-1"/>
 <wire x1="6.97" y1="-57.658" x2="2.474" y2="-59.266" width="0" layer="19" extent="1-1"/>
 <wire x1="10.526" y1="-57.658" x2="6.97" y2="-57.658" width="0" layer="19" extent="1-1"/>
 <wire x1="1.189" y1="-52.436" x2="2.474" y2="-59.266" width="0" layer="19" extent="1-1"/>
 <wire x1="1.189" y1="-51.786" x2="1.189" y2="-52.436" width="0" layer="19" extent="1-1"/>
-<wire x1="3.81" y1="-44.45" x2="1.189" y2="-51.786" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TP_T+_2">
 <contactref element="C28" pad="2"/>
-<contactref element="TC3" pad="1"/>
 <contactref element="D6" pad="1"/>
 <contactref element="U13" pad="P$4"/>
 <contactref element="C30" pad="1"/>
+<contactref element="T3" pad="POS"/>
+<wire x1="0.874" y1="-62.484" x2="2.159" y2="-188.468" width="0" layer="19" extent="1-1"/>
 <wire x1="0.574" y1="-59.266" x2="0.874" y2="-62.484" width="0" layer="19" extent="1-1"/>
 <wire x1="1.189" y1="-53.086" x2="0.574" y2="-59.266" width="0" layer="19" extent="1-1"/>
 <wire x1="8.27" y1="-57.658" x2="0.574" y2="-59.266" width="0" layer="19" extent="1-1"/>
-<wire x1="1.27" y1="-44.45" x2="1.189" y2="-53.086" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TP_T-_3">
 <contactref element="C48" pad="1"/>
-<contactref element="TC4" pad="2"/>
 <contactref element="D7" pad="2"/>
 <contactref element="U14" pad="P$3"/>
 <contactref element="C49" pad="1"/>
 <contactref element="U14" pad="P$2"/>
+<contactref element="T4" pad="NEG"/>
+<wire x1="2.474" y1="-81.618" x2="8.509" y2="-198.12" width="0" layer="19" extent="1-1"/>
 <wire x1="6.97" y1="-80.01" x2="2.474" y2="-81.618" width="0" layer="19" extent="1-1"/>
 <wire x1="10.526" y1="-80.01" x2="6.97" y2="-80.01" width="0" layer="19" extent="1-1"/>
 <wire x1="1.189" y1="-74.788" x2="2.474" y2="-81.618" width="0" layer="19" extent="1-1"/>
 <wire x1="1.189" y1="-74.138" x2="1.189" y2="-74.788" width="0" layer="19" extent="1-1"/>
-<wire x1="3.81" y1="-66.802" x2="1.189" y2="-74.138" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TP_T+_3">
 <contactref element="C48" pad="2"/>
-<contactref element="TC4" pad="1"/>
 <contactref element="D7" pad="1"/>
 <contactref element="U14" pad="P$4"/>
 <contactref element="C50" pad="1"/>
+<contactref element="T4" pad="POS"/>
+<wire x1="0.874" y1="-84.836" x2="2.159" y2="-198.12" width="0" layer="19" extent="1-1"/>
 <wire x1="0.574" y1="-81.618" x2="0.874" y2="-84.836" width="0" layer="19" extent="1-1"/>
 <wire x1="1.189" y1="-75.438" x2="0.574" y2="-81.618" width="0" layer="19" extent="1-1"/>
 <wire x1="8.27" y1="-80.01" x2="0.574" y2="-81.618" width="0" layer="19" extent="1-1"/>
-<wire x1="1.27" y1="-66.802" x2="1.189" y2="-75.438" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_3_!CS">
 <contactref element="U14" pad="P$9"/>
@@ -7703,25 +7705,25 @@ design rules under a new name.</description>
 </signal>
 <signal name="TP_T-_4">
 <contactref element="C55" pad="1"/>
-<contactref element="TC5" pad="2"/>
 <contactref element="D8" pad="2"/>
 <contactref element="U15" pad="P$3"/>
 <contactref element="C56" pad="1"/>
 <contactref element="U15" pad="P$2"/>
+<contactref element="T5" pad="NEG"/>
+<wire x1="2.474" y1="-110.574" x2="8.509" y2="-207.772" width="0" layer="19" extent="1-1"/>
 <wire x1="13.066" y1="-108.966" x2="2.474" y2="-110.574" width="0" layer="19" extent="1-1"/>
 <wire x1="16.622" y1="-108.966" x2="13.066" y2="-108.966" width="0" layer="19" extent="1-1"/>
 <wire x1="1.189" y1="-97.14" x2="2.474" y2="-110.574" width="0" layer="19" extent="1-1"/>
 <wire x1="1.189" y1="-96.49" x2="1.189" y2="-97.14" width="0" layer="19" extent="1-1"/>
-<wire x1="3.81" y1="-89.154" x2="1.189" y2="-96.49" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TP_T+_4">
 <contactref element="C55" pad="2"/>
-<contactref element="TC5" pad="1"/>
 <contactref element="D8" pad="1"/>
 <contactref element="U15" pad="P$4"/>
 <contactref element="C57" pad="1"/>
+<contactref element="T5" pad="POS"/>
+<wire x1="0.574" y1="-110.574" x2="2.159" y2="-207.772" width="0" layer="19" extent="1-1"/>
 <wire x1="1.189" y1="-97.79" x2="0.574" y2="-110.574" width="0" layer="19" extent="1-1"/>
-<wire x1="1.27" y1="-89.154" x2="1.189" y2="-97.79" width="0" layer="19" extent="1-1"/>
 <wire x1="14.366" y1="-108.966" x2="0.574" y2="-110.574" width="0" layer="19" extent="1-1"/>
 <wire x1="20.178" y1="-108.966" x2="14.366" y2="-108.966" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -7737,50 +7739,50 @@ design rules under a new name.</description>
 </signal>
 <signal name="TP_T-_5">
 <contactref element="C60" pad="1"/>
-<contactref element="TC6" pad="2"/>
 <contactref element="D9" pad="2"/>
 <contactref element="U16" pad="P$3"/>
 <contactref element="C61" pad="1"/>
 <contactref element="U16" pad="P$2"/>
-<wire x1="7.986" y1="-113.792" x2="4.43" y2="-113.792" width="0" layer="19" extent="1-1"/>
+<contactref element="T6" pad="NEG"/>
+<wire x1="7.986" y1="-113.792" x2="8.509" y2="-217.424" width="0" layer="19" extent="1-1"/>
 <wire x1="8.57" y1="-110.574" x2="7.986" y2="-113.792" width="0" layer="19" extent="1-1"/>
+<wire x1="4.43" y1="-113.792" x2="7.986" y2="-113.792" width="0" layer="19" extent="1-1"/>
 <wire x1="9.571" y1="-97.14" x2="8.57" y2="-110.574" width="0" layer="19" extent="1-1"/>
 <wire x1="9.571" y1="-96.49" x2="9.571" y2="-97.14" width="0" layer="19" extent="1-1"/>
-<wire x1="9.906" y1="-89.154" x2="9.571" y2="-96.49" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TP_T+_5">
 <contactref element="C60" pad="2"/>
-<contactref element="TC6" pad="1"/>
 <contactref element="D9" pad="1"/>
 <contactref element="U16" pad="P$4"/>
 <contactref element="C62" pad="1"/>
+<contactref element="T6" pad="POS"/>
+<wire x1="5.73" y1="-113.792" x2="2.159" y2="-217.424" width="0" layer="19" extent="1-1"/>
 <wire x1="6.67" y1="-110.574" x2="5.73" y2="-113.792" width="0" layer="19" extent="1-1"/>
 <wire x1="11.542" y1="-113.792" x2="5.73" y2="-113.792" width="0" layer="19" extent="1-1"/>
 <wire x1="9.571" y1="-97.79" x2="6.67" y2="-110.574" width="0" layer="19" extent="1-1"/>
-<wire x1="7.366" y1="-89.154" x2="9.571" y2="-97.79" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TP_T-_6">
 <contactref element="C65" pad="1"/>
-<contactref element="TC7" pad="2"/>
 <contactref element="D10" pad="2"/>
 <contactref element="U17" pad="P$3"/>
 <contactref element="C66" pad="1"/>
 <contactref element="U17" pad="P$2"/>
+<contactref element="T7" pad="NEG"/>
+<wire x1="0.874" y1="-116.84" x2="8.509" y2="-227.076" width="0" layer="19" extent="1-1"/>
 <wire x1="10.856" y1="-103.97" x2="0.874" y2="-116.84" width="0" layer="19" extent="1-1"/>
 <wire x1="17.953" y1="-97.14" x2="10.856" y2="-103.97" width="0" layer="19" extent="1-1"/>
 <wire x1="17.953" y1="-96.49" x2="17.953" y2="-97.14" width="0" layer="19" extent="1-1"/>
-<wire x1="16.002" y1="-89.154" x2="17.953" y2="-96.49" width="0" layer="19" extent="1-1"/>
 <wire x1="22.21" y1="-113.792" x2="10.856" y2="-103.97" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TP_T+_6">
 <contactref element="C65" pad="2"/>
-<contactref element="TC7" pad="1"/>
 <contactref element="D10" pad="1"/>
 <contactref element="U17" pad="P$4"/>
 <contactref element="C67" pad="1"/>
+<contactref element="T7" pad="POS"/>
+<wire x1="4.43" y1="-116.84" x2="2.159" y2="-227.076" width="0" layer="19" extent="1-1"/>
 <wire x1="8.956" y1="-103.97" x2="4.43" y2="-116.84" width="0" layer="19" extent="1-1"/>
 <wire x1="17.953" y1="-97.79" x2="8.956" y2="-103.97" width="0" layer="19" extent="1-1"/>
-<wire x1="13.462" y1="-89.154" x2="17.953" y2="-97.79" width="0" layer="19" extent="1-1"/>
 <wire x1="23.51" y1="-113.792" x2="17.953" y2="-97.79" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_6_!CS">
@@ -7790,27 +7792,27 @@ design rules under a new name.</description>
 </signal>
 <signal name="TP_T-_7">
 <contactref element="C70" pad="1"/>
-<contactref element="TC8" pad="2"/>
 <contactref element="D11" pad="2"/>
 <contactref element="U18" pad="P$3"/>
 <contactref element="C71" pad="1"/>
 <contactref element="U18" pad="P$2"/>
+<contactref element="T8" pad="NEG"/>
+<wire x1="15.098" y1="-116.84" x2="8.509" y2="-236.728" width="0" layer="19" extent="1-1"/>
 <wire x1="18.654" y1="-116.84" x2="15.098" y2="-116.84" width="0" layer="19" extent="1-1"/>
 <wire x1="17.714" y1="-103.97" x2="18.654" y2="-116.84" width="0" layer="19" extent="1-1"/>
-<wire x1="22.098" y1="-89.154" x2="17.714" y2="-103.97" width="0" layer="19" extent="1-1"/>
 <wire x1="1.189" y1="-103.744" x2="17.714" y2="-103.97" width="0" layer="19" extent="1-1"/>
 <wire x1="1.189" y1="-103.094" x2="1.189" y2="-103.744" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TP_T+_7">
 <contactref element="C70" pad="2"/>
-<contactref element="TC8" pad="1"/>
 <contactref element="D11" pad="1"/>
 <contactref element="U18" pad="P$4"/>
 <contactref element="C72" pad="1"/>
-<wire x1="15.814" y1="-103.97" x2="1.189" y2="-104.394" width="0" layer="19" extent="1-1"/>
-<wire x1="16.398" y1="-116.84" x2="15.814" y2="-103.97" width="0" layer="19" extent="1-1"/>
+<contactref element="T8" pad="POS"/>
+<wire x1="16.398" y1="-116.84" x2="2.159" y2="-236.728" width="0" layer="19" extent="1-1"/>
 <wire x1="22.21" y1="-116.84" x2="16.398" y2="-116.84" width="0" layer="19" extent="1-1"/>
-<wire x1="19.558" y1="-89.154" x2="15.814" y2="-103.97" width="0" layer="19" extent="1-1"/>
+<wire x1="15.814" y1="-103.97" x2="16.398" y2="-116.84" width="0" layer="19" extent="1-1"/>
+<wire x1="1.189" y1="-104.394" x2="15.814" y2="-103.97" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_7_!CS">
 <contactref element="U18" pad="P$9"/>
