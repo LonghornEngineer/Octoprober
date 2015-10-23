@@ -16890,11 +16890,11 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <part name="C43" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="1206" value="10uF"/>
 <part name="C44" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="1206" value="10uF"/>
 <part name="C45" library="PP_Passives" deviceset="CAPACITOR_POLARIZED" device="CASE_D" value="470uF"/>
-<part name="C23" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="10uF"/>
-<part name="C25" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="10uF"/>
-<part name="C27" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="1uF"/>
-<part name="R35" library="PP_Passives" deviceset="RESISTOR" device="0402" value="1"/>
-<part name="L18" library="PP_Passives" deviceset="INDUCTOR" device="0603" value="LK1608100K-T"/>
+<part name="C23" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="1206" value="10uF"/>
+<part name="C25" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="1206" value="10uF"/>
+<part name="C27" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0603" value="1uF"/>
+<part name="R35" library="PP_Passives" deviceset="RESISTOR" device="0603" value="1"/>
+<part name="L18" library="PP_Passives" deviceset="INDUCTOR" device="CDRH6D28" value="CDRH6D28NP-100NC"/>
 <part name="C53" library="PP_Passives" deviceset="CAPACITOR_POLARIZED" device="CASE_D" value="470uF"/>
 <part name="U11" library="PP_AnalogIC" deviceset="MAX31856" device="" value="MAX31856MUD+"/>
 <part name="C15" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="0402" value="0.01uF"/>
