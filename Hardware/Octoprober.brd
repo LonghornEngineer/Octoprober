@@ -463,19 +463,6 @@
 <wire x1="-9.906" y1="-3.175" x2="-9.906" y2="3.175" width="0.127" layer="21"/>
 <text x="-0.635" y="2.54" size="1.016" layer="25" font="vector" ratio="16" align="top-right">&gt;NAME</text>
 </package>
-<package name="2.54MM_01X02_PIN_HEADER">
-<description>2 Pin 100 mill header</description>
-<pad name="1" x="-1.27" y="0" drill="0.8" rot="R90"/>
-<pad name="2" x="1.27" y="0" drill="0.8" rot="R90"/>
-<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
-<wire x1="2.54" y1="1.27" x2="-2.54" y2="1.27" width="0.127" layer="21"/>
-<circle x="-2.54" y="-1.27" radius="0.3175" width="0.127" layer="21"/>
-<text x="-2.54" y="1.5875" size="0.8128" layer="21" font="vector" ratio="16">&gt;NAME</text>
-<text x="1.27" y="-2.54" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-right">&gt;LABEL02</text>
-<text x="-1.27" y="-2.54" size="0.8128" layer="21" font="vector" ratio="16" rot="R90" align="center-right">&gt;LABEL01</text>
-</package>
 <package name="ER-CON2.0-2P-SMD">
 <smd name="P$1" x="-1" y="0" dx="1" dy="2.85" layer="1"/>
 <smd name="P$2" x="1" y="0" dx="1" dy="2.85" layer="1"/>
@@ -545,6 +532,22 @@
 <text x="-8.255" y="0" size="0.8128" layer="21" font="vector" ratio="16" rot="R180">1</text>
 <wire x1="-11" y1="3.81" x2="-11" y2="2.54" width="0.127" layer="21"/>
 <wire x1="11" y1="3.81" x2="11" y2="2.54" width="0.127" layer="21"/>
+</package>
+<package name="KEYSTONE_1042">
+<smd name="N" x="-39.3319" y="0" dx="7.3406" dy="6.35" layer="1"/>
+<smd name="P" x="39.3319" y="0" dx="7.3406" dy="6.35" layer="1"/>
+<hole x="-27.6225" y="-8.001" drill="3.2"/>
+<hole x="27.6225" y="8.001" drill="3.2"/>
+<hole x="35.9537" y="-8.001" drill="2.8"/>
+<wire x1="-44.45" y1="10.3251" x2="44.45" y2="10.3251" width="0.127" layer="21"/>
+<wire x1="44.45" y1="10.3251" x2="44.45" y2="-10.3251" width="0.127" layer="21"/>
+<wire x1="44.45" y1="-10.3251" x2="-44.45" y2="-10.3251" width="0.127" layer="21"/>
+<wire x1="-44.45" y1="-10.3251" x2="-44.45" y2="10.3251" width="0.127" layer="21"/>
+<text x="-44.45" y="11.43" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="39.37" y="-8.89" size="5.08" layer="21" font="vector">+</text>
+<text x="-43.18" y="-8.89" size="5.08" layer="21" font="vector">-</text>
+<text x="23.46" y="11.43" size="0.8128" layer="21" font="vector">SINGLE 18650 Li-Ion ONLY</text>
+<text x="41.46" y="11.43" size="0.8128" layer="21" font="vector">3.7V</text>
 </package>
 </packages>
 </library>
@@ -6494,10 +6497,10 @@ design rules under a new name.</description>
 <element name="C11" library="PP_Passives" package="0603" value="0.1uF" x="112.268" y="91.916" smashed="yes" rot="R90">
 <attribute name="NAME" x="111.287" y="93.5035" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="R10" library="PP_Passives" package="0603" value="22" x="119.253" y="85.566" smashed="yes" rot="R270">
+<element name="R10" library="PP_Passives" package="0603" value="27" x="119.253" y="85.566" smashed="yes" rot="R270">
 <attribute name="NAME" x="118.399" y="83.0895" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
-<element name="R11" library="PP_Passives" package="0603" value="22" x="117.348" y="85.566" smashed="yes" rot="R270">
+<element name="R11" library="PP_Passives" package="0603" value="27" x="117.348" y="85.566" smashed="yes" rot="R270">
 <attribute name="NAME" x="114.589" y="86.0105" size="0.8128" layer="25" font="vector" ratio="16"/>
 </element>
 <element name="C12" library="PP_Passives" package="0603" value="0.1uF" x="104.521" y="83.153" smashed="yes" rot="R180">
@@ -6779,9 +6782,9 @@ design rules under a new name.</description>
 <attribute name="LABEL13" value="DB4" x="-13.716" y="-242.316" size="1.778" layer="27" display="off"/>
 <attribute name="LABEL14" value="DB5" x="-13.716" y="-242.316" size="1.778" layer="27" display="off"/>
 <attribute name="LABEL30" value="V1" x="-13.716" y="-242.316" size="1.778" layer="27" display="off"/>
-<attribute name="LABEL15" value="DB6_SCL" x="-13.716" y="-242.316" size="1.778" layer="27" display="off"/>
+<attribute name="LABEL15" value="DB6_SDA" x="-13.716" y="-242.316" size="1.778" layer="27" display="off"/>
 <attribute name="LABEL31" value="V0" x="-13.716" y="-242.316" size="1.778" layer="27" display="off"/>
-<attribute name="LABEL16" value="DB7_SDA" x="-13.716" y="-242.316" size="1.778" layer="27" display="off"/>
+<attribute name="LABEL16" value="DB7_SCL" x="-13.716" y="-242.316" size="1.778" layer="27" display="off"/>
 <attribute name="LABEL17" value="VDD" x="-13.716" y="-242.316" size="1.778" layer="27" display="off"/>
 <attribute name="LABEL18" value="VDD" x="-13.716" y="-242.316" size="1.778" layer="27" display="off"/>
 <attribute name="LABEL19" value="VDD" x="-13.716" y="-242.316" size="1.778" layer="27" display="off"/>
@@ -6810,11 +6813,7 @@ design rules under a new name.</description>
 <element name="C78" library="PP_Passives" package="0603" value="1uF" x="-23.114" y="-277.876"/>
 <element name="C79" library="PP_Passives" package="0603" value="1uF" x="-23.114" y="-281.178"/>
 <element name="C80" library="PP_Passives" package="0603" value="3.3uF" x="-23.114" y="-284.48"/>
-<element name="J5" library="PP_Connectors" package="2.54MM_01X02_PIN_HEADER" value="" x="-27.94" y="-276.606">
-<attribute name="LABEL02" value="VBATT+" x="-27.94" y="-276.606" size="1.778" layer="27" display="off"/>
-<attribute name="LABEL01" value="VBATT-" x="-27.94" y="-276.606" size="1.778" layer="27" display="off"/>
-</element>
-<element name="J6" library="PP_Connectors" package="ER-CON2.0-2P-SMD" value="" x="-40.132" y="-276.098">
+<element name="J6" library="PP_Connectors" package="ER-CON2.0-2P-SMD" value="ER-CON2.0-2P-SMD" x="-40.132" y="-276.098">
 <attribute name="LABEL02" value="" x="-40.132" y="-276.098" size="1.778" layer="27" display="off"/>
 <attribute name="LABEL01" value="" x="-40.132" y="-276.098" size="1.778" layer="27" display="off"/>
 </element>
@@ -6829,6 +6828,7 @@ design rules under a new name.</description>
 <element name="U6" library="PP_DigitalIC" package="DS1340Z_SOIC-8" value="DS1340Z-33+" x="-49.784" y="-301.752"/>
 <element name="U10" library="PP_PowerIC" package="BQ2407X_VQFN-16" value="BQ24075RGTT" x="-57.658" y="-301.752"/>
 <element name="U5" library="PP_PowerIC" package="ADP3338_SOT-223-3" value="ADP3338AKCZ-3.3-RL" x="-64.516" y="-299.974"/>
+<element name="BATT1" library="PP_Connectors" package="KEYSTONE_1042" value="1042" x="26.924" y="-206.756" rot="R90"/>
 </elements>
 <signals>
 <signal name="X0">
@@ -7030,7 +7030,6 @@ design rules under a new name.</description>
 <contactref element="U1" pad="27"/>
 <contactref element="J4" pad="P$2"/>
 <contactref element="J4" pad="P$1"/>
-<contactref element="J5" pad="1"/>
 <contactref element="J6" pad="P$2"/>
 <contactref element="U2" pad="4"/>
 <contactref element="U2" pad="1"/>
@@ -7044,6 +7043,7 @@ design rules under a new name.</description>
 <contactref element="U10" pad="8"/>
 <contactref element="U10" pad="15"/>
 <contactref element="U5" pad="1"/>
+<contactref element="BATT1" pad="N"/>
 <wire x1="112.268" y1="92.766" x2="124.333" y2="86.416" width="0" layer="19" extent="1-1"/>
 <wire x1="110.363" y1="92.766" x2="112.268" y2="92.766" width="0" layer="19" extent="1-1"/>
 <wire x1="108.363" y1="85.144" x2="110.363" y2="92.766" width="0" layer="19" extent="1-1"/>
@@ -7163,8 +7163,7 @@ design rules under a new name.</description>
 <wire x1="6.572" y1="62.296" x2="6.572" y2="55.496" width="0" layer="19" extent="1-1"/>
 <wire x1="-20.716" y1="-242.316" x2="-7.874" y2="-160.894" width="0" layer="19" extent="1-1"/>
 <wire x1="-21.216" y1="-242.316" x2="-20.716" y2="-242.316" width="0" layer="19" extent="1-1"/>
-<wire x1="-29.21" y1="-276.606" x2="-21.216" y2="-242.316" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.132" y1="-276.098" x2="-29.21" y2="-276.606" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.132" y1="-276.098" x2="-21.216" y2="-242.316" width="0" layer="19" extent="1-1"/>
 <wire x1="-47.234" y1="-289.433" x2="-39.132" y2="-276.098" width="0" layer="19" extent="1-1"/>
 <wire x1="-52.334" y1="-289.433" x2="-47.234" y2="-289.433" width="0" layer="19" extent="1-1"/>
 <wire x1="-52.334" y1="-290.703" x2="-52.334" y2="-289.433" width="0" layer="19" extent="1-1"/>
@@ -7177,6 +7176,7 @@ design rules under a new name.</description>
 <wire x1="-56.908" y1="-303.227" x2="-57.658" y2="-301.752" width="0" layer="19" extent="1-1"/>
 <wire x1="-52.334" y1="-303.657" x2="-56.908" y2="-303.227" width="0" layer="19" extent="1-1"/>
 <wire x1="-66.816" y1="-302.514" x2="-57.908" y2="-300.277" width="0" layer="19" extent="1-1"/>
+<wire x1="26.924" y1="-246.0879" x2="-66.816" y2="-302.514" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RES">
 <contactref element="R1" pad="1"/>
@@ -7411,13 +7411,13 @@ design rules under a new name.</description>
 <signal name="VBATT">
 <contactref element="C31" pad="1"/>
 <contactref element="R29" pad="1"/>
-<contactref element="J5" pad="2"/>
 <contactref element="U10" pad="3"/>
 <contactref element="U10" pad="2"/>
+<contactref element="BATT1" pad="P"/>
 <wire x1="-59.133" y1="-301.502" x2="-59.133" y2="-302.002" width="0" layer="19" extent="1-1"/>
-<wire x1="-26.67" y1="-276.606" x2="-59.133" y2="-301.502" width="0" layer="19" extent="1-1"/>
-<wire x1="49.022" y1="16.602" x2="-26.67" y2="-276.606" width="0" layer="19" extent="1-1"/>
-<wire x1="78.74" y1="8.262" x2="49.022" y2="16.602" width="0" layer="19" extent="1-1"/>
+<wire x1="26.924" y1="-167.4241" x2="-59.133" y2="-302.002" width="0" layer="19" extent="1-1"/>
+<wire x1="78.74" y1="8.262" x2="26.924" y2="-167.4241" width="0" layer="19" extent="1-1"/>
+<wire x1="49.022" y1="16.602" x2="78.74" y2="8.262" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TP_T-_0">
 <contactref element="C16" pad="1"/>
@@ -7614,23 +7614,23 @@ design rules under a new name.</description>
 </signal>
 <signal name="LCD_SCL">
 <contactref element="U1" pad="1"/>
-<contactref element="J4" pad="P$15"/>
-<contactref element="R38" pad="1"/>
-<contactref element="J4" pad="P$11"/>
-<contactref element="J4" pad="P$12"/>
-<contactref element="J4" pad="P$13"/>
-<wire x1="-14.216" y1="-242.316" x2="-13.574" y2="-151.194" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.216" y1="-242.316" x2="-14.216" y2="-242.316" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.716" y1="-242.316" x2="-15.216" y2="-242.316" width="0" layer="19" extent="1-1"/>
-<wire x1="-16.216" y1="-242.316" x2="-15.716" y2="-242.316" width="0" layer="19" extent="1-1"/>
-<wire x1="-22.948" y1="-258.572" x2="-16.216" y2="-242.316" width="0" layer="19" extent="1-1"/>
+<contactref element="J4" pad="P$16"/>
+<contactref element="R39" pad="1"/>
+<wire x1="-13.716" y1="-242.316" x2="-13.574" y2="-151.194" width="0" layer="19" extent="1-1"/>
+<wire x1="-22.948" y1="-261.874" x2="-13.716" y2="-242.316" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LCD_SDA">
 <contactref element="U1" pad="2"/>
-<contactref element="J4" pad="P$16"/>
-<contactref element="R39" pad="1"/>
-<wire x1="-13.716" y1="-242.316" x2="-13.574" y2="-151.994" width="0" layer="19" extent="1-1"/>
-<wire x1="-22.948" y1="-261.874" x2="-13.716" y2="-242.316" width="0" layer="19" extent="1-1"/>
+<contactref element="J4" pad="P$11"/>
+<contactref element="R38" pad="1"/>
+<contactref element="J4" pad="P$12"/>
+<contactref element="J4" pad="P$13"/>
+<contactref element="J4" pad="P$15"/>
+<wire x1="-15.216" y1="-242.316" x2="-13.574" y2="-151.994" width="0" layer="19" extent="1-1"/>
+<wire x1="-15.716" y1="-242.316" x2="-15.216" y2="-242.316" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.216" y1="-242.316" x2="-15.716" y2="-242.316" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.216" y1="-242.316" x2="-15.216" y2="-242.316" width="0" layer="19" extent="1-1"/>
+<wire x1="-22.948" y1="-258.572" x2="-16.216" y2="-242.316" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LCD_RST">
 <contactref element="U1" pad="3"/>
