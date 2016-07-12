@@ -18104,6 +18104,18 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <wire x1="-4.08" y1="2.3" x2="4.08" y2="2.3" width="0.127" layer="21"/>
 <wire x1="4.08" y1="2.3" x2="5.08" y2="1.3" width="0.127" layer="21"/>
 <wire x1="5.08" y1="1.3" x2="5.08" y2="-2.855" width="0.127" layer="21"/>
+<wire x1="-3.55" y1="-1.05" x2="-3.55" y2="-1.75" width="0.01" layer="46"/>
+<wire x1="-3.55" y1="-1.75" x2="-3.3" y2="-2" width="0.01" layer="46" curve="90"/>
+<wire x1="-3.3" y1="-2" x2="-3.05" y2="-1.75" width="0.01" layer="46" curve="90"/>
+<wire x1="-3.05" y1="-1.75" x2="-3.05" y2="-1.05" width="0.01" layer="46"/>
+<wire x1="-3.05" y1="-1.05" x2="-3.3" y2="-0.8" width="0.01" layer="46" curve="90"/>
+<wire x1="-3.3" y1="-0.8" x2="-3.55" y2="-1.05" width="0.01" layer="46" curve="90"/>
+<wire x1="3.05" y1="-1.05" x2="3.05" y2="-1.75" width="0.01" layer="46"/>
+<wire x1="3.05" y1="-1.75" x2="3.3" y2="-2" width="0.01" layer="46" curve="90"/>
+<wire x1="3.3" y1="-2" x2="3.55" y2="-1.75" width="0.01" layer="46" curve="90"/>
+<wire x1="3.55" y1="-1.75" x2="3.55" y2="-1.05" width="0.01" layer="46"/>
+<wire x1="3.55" y1="-1.05" x2="3.3" y2="-0.8" width="0.01" layer="46" curve="90"/>
+<wire x1="3.3" y1="-0.8" x2="3.05" y2="-1.05" width="0.01" layer="46" curve="90"/>
 <smd name="S5" x="-1.2" y="-1.405" dx="1.9" dy="1.9" layer="1"/>
 <smd name="S6" x="1.2" y="-1.405" dx="1.9" dy="1.9" layer="1"/>
 <smd name="S1" x="-3.3" y="-1.4" dx="0.9" dy="1.6" layer="1" roundness="100" rot="R180"/>
@@ -18690,8 +18702,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <part name="R11" library="PP_Passives" deviceset="RESISTOR" device="_0603" value="27"/>
 <part name="C12" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="_0603" value="0.1uF"/>
 <part name="D1" library="PP_LED" deviceset="LED_SINGLE" device="_0805" value="598-8070-107F"/>
-<part name="D2" library="PP_LED" deviceset="LED_SINGLE" device="_0805" value="598-8070-107F"/>
-<part name="R12" library="PP_Passives" deviceset="RESISTOR" device="_0603" value="330"/>
 <part name="R13" library="PP_Passives" deviceset="RESISTOR" device="_0603" value="330"/>
 <part name="C13" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="_0603" value="0.1uF"/>
 <part name="C14" library="PP_Passives" deviceset="CAPACITOR_NON_POLAR" device="_0603" value="0.1uF"/>
@@ -18912,8 +18922,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <instance part="R11" gate="G$1" x="-78.74" y="-40.64" rot="R270"/>
 <instance part="C12" gate="G$1" x="-33.02" y="-53.34" rot="R90"/>
 <instance part="D1" gate="G$1" x="-119.38" y="-78.74" rot="R270"/>
-<instance part="D2" gate="G$1" x="-109.22" y="-78.74" rot="R270"/>
-<instance part="R12" gate="G$1" x="-109.22" y="-68.58" rot="R270"/>
 <instance part="R13" gate="G$1" x="-119.38" y="-68.58" rot="R270"/>
 <instance part="C13" gate="G$1" x="-43.18" y="-35.56"/>
 <instance part="C14" gate="G$1" x="-35.56" y="-35.56"/>
@@ -20172,12 +20180,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 </net>
 <net name="TXRX_LED" class="0">
 <segment>
-<pinref part="D2" gate="G$1" pin="CATHODE"/>
-<wire x1="-109.22" y1="-81.28" x2="-109.22" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="-109.22" y1="-86.36" x2="-101.6" y2="-86.36" width="0.1524" layer="91"/>
-<label x="-106.68" y="-86.36" size="0.8128" layer="95" font="vector"/>
-</segment>
-<segment>
 <pinref part="U4" gate="G$1" pin="CBUS0"/>
 <wire x1="-43.18" y1="-60.96" x2="-33.02" y2="-60.96" width="0.1524" layer="91"/>
 <label x="-40.64" y="-60.96" size="0.8128" layer="95" font="vector"/>
@@ -20193,13 +20195,6 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <wire x1="16.51" y1="-60.96" x2="27.94" y2="-60.96" width="0.1524" layer="91"/>
 <label x="22.86" y="-60.96" size="0.8128" layer="95" font="vector"/>
 <pinref part="U21" gate="G$1" pin="2Y"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="D2" gate="G$1" pin="ANODE"/>
-<pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="-109.22" y1="-76.2" x2="-109.22" y2="-73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -20338,12 +20333,8 @@ Description: DC Power Connectors 4P JACK SKT SHIELDED SNAP AND LOCK</description
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="-119.38" y1="-63.5" x2="-119.38" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="-119.38" y1="-58.42" x2="-109.22" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="-109.22" y1="-63.5" x2="-109.22" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="-109.22" y1="-58.42" x2="-101.6" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="-58.42" x2="-101.6" y2="-58.42" width="0.1524" layer="91"/>
 <label x="-106.68" y="-58.42" size="0.8128" layer="95" font="vector"/>
-<junction x="-109.22" y="-58.42"/>
 </segment>
 <segment>
 <wire x1="109.22" y1="7.62" x2="109.22" y2="10.16" width="0.1524" layer="91"/>
